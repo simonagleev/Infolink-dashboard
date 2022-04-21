@@ -10,12 +10,66 @@
                 "text2": "За неделю: +1 проблема"
             }
         },
-        "scope": {},
-        "resources": {},
-        "bek": {},
-        "deadline": {},
-        "budget": {},
-        "quality": {}
+        "scope": {
+            "data": {
+                "color": "green",
+                "name": "Коммуникации",
+                "iconType": "indicator_communications",
+                "dynamic": "updown",
+                "text1": "1 проблема (нет решения)",
+                "text2": "За неделю: +1 проблема"
+            }
+        },
+        "resources": {
+            "data": {
+                "color": "green",
+                "name": "Коммуникации",
+                "iconType": "indicator_communications",
+                "dynamic": "updown",
+                "text1": "1 проблема (нет решения)",
+                "text2": "За неделю: +1 проблема"
+            }
+        },
+        "bek": {
+            "data": {
+                "color": "green",
+                "name": "Коммуникации",
+                "iconType": "indicator_communications",
+                "dynamic": "updown",
+                "text1": "1 проблема (нет решения)",
+                "text2": "За неделю: +1 проблема"
+            }
+        },
+        "deadline": {
+            "data": {
+                "color": "green",
+                "name": "Коммуникации",
+                "iconType": "indicator_communications",
+                "dynamic": "updown",
+                "text1": "1 проблема (нет решения)",
+                "text2": "За неделю: +1 проблема"
+            }
+        },
+        "budget": {
+            "data": {
+                "color": "green",
+                "name": "Коммуникации",
+                "iconType": "indicator_communications",
+                "dynamic": "updown",
+                "text1": "1 проблема (нет решения)",
+                "text2": "За неделю: +1 проблема"
+            }
+        },
+        "quality": {
+            "data": {
+                "color": "green",
+                "name": "Коммуникации",
+                "iconType": "indicator_communications",
+                "dynamic": "updown",
+                "text1": "1 проблема (нет решения)",
+                "text2": "За неделю: +1 проблема"
+            }
+        }
     },
     "scenarios": {
         "criteria": {
