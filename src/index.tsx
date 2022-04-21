@@ -1,19 +1,23 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import ReactDOM from 'react-dom';
+
+import { ThemeProvider } from '@mui/styles';
+import { ModalProvider } from 'react-declarative';
+
+import AlertProvider from './components/AlertProvider';
+
+import THEME_LIGHT from './theme';
+
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+const wrappedApp = (
+  <ThemeProvider theme={THEME_LIGHT}>
+    <ModalProvider>
+      <AlertProvider>
+        <App />
+      </AlertProvider>
+    </ModalProvider>
+  </ThemeProvider>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+ReactDOM.render(wrappedApp, document.getElementById('root'));
