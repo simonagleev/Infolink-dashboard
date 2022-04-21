@@ -4,6 +4,7 @@ import ioc from '../lib/ioc';
 
 import Scenarios from '../widgets/Scenarios'
 import SituationResume from '../widgets/SituationResume';
+import RevenueChart from '../widgets/RevenueChart';
 
 export const HomePage = () => {
     return (
@@ -15,6 +16,10 @@ export const HomePage = () => {
             <SituationResume
                 style={{ height: 300, width: 300}}
                 data={ioc.mockService.homePage.sc_resume}
+            />
+            <RevenueChart
+                style={{ height: 300, width: 300}}
+                data={ioc.mockService.homePage.revenue}
             />
         </>
 

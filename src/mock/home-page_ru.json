@@ -91,11 +91,67 @@
     "sc_resume": {
         "resume": "<span style='  font-size: 11pt;  color: #000000;  color: #000000;'></span><span style='  font-size: 11pt;  color: #000000;'>Работы по ГК ведутся по Заявкам в рамках 67 Объектов.<br/></span><span style='  font-size: 11pt;  color: #ff0000;'>Высоковероятен риск недобора дохода по 14 объектам.<br/></span><span style='  font-size: 11pt;  color: #000000;'><br/>По 53 объектам получено 75 Заявок, из них:<br/></span><span style='  font-size: 11pt;  color: #70ad47;'>* По графику - 31;</span><span style='  font-size: 11pt;  color: #000000;'><br/>закрыто Актами - 23;<br/>в работе - 8<br/><br/></span><span style='  font-size: 11pt;  color: #ff0000;'>* С просрочками:</span><span style='  font-size: 11pt;  color: #000000;'> &hellip;</span>",
         "indicator": {
-          "src": "triangle_explanation"
+            "src": "triangle_explanation"
         },
         "header": "ЗАКЛЮЧЕНИЕ СИТУАЦИОННОГО ЦЕНТРА",
         "dynamic": {
-          "src": "round_yellow_arrow_updown"
+            "src": "round_yellow_arrow_updown"
+        }
+    },
+    "revenue": {
+        "income": {
+            "color": "triangle_explanation",
+            "name": "Получена оплата",
+            "sum": "12249994",
+            "percent": 5
+        },
+        "risks": {
+            "color": "#967BDC",
+            "name": "Заложено на риски",
+            "sum": "73 499 965 ₽",
+            "percent": 30
+        },
+        "inwork": {
+            "color": "#967BDC",
+            "name": "В работе",
+            "sum": "146999930",
+            "percent": 60
+        },
+        "riskShortfall": {
+            "color": "#FE9B31",
+            "name": "Риск недобора",
+            "comment": "(вероятность 50%)",
+            "sum": "61 249 971 ₽",
+            "percent": 25
+        },
+        "penalty": {
+            "color": "#FA5F5A",
+            "name": "Оплачено неустоек",
+            "sum": "0 ₽",
+            "percent": 0
+        },
+        "header": "ДИАГРАММА ВЫРУЧКИ",
+        "dynamic": {
+            "name": "Динамика за неделю",
+            "icon": {
+                "src": "round_green_arrow_up"
+            },
+            "sum": "2 000 500 ₽"
+        },
+        "overflowRisk": {
+            "name": "Риск выхода за рамки бюджета\\nна  % - на р",
+            "icon": {
+                "src": "triangle_explanation"
+            },
+            "sum": "-12249994",
+            "percent": -5
+        },
+        "penaltyRisk": {
+            "color": "#FE9B31",
+            "name": "Риск неустоек",
+            "comment": "(обращение в суд)",
+            "sum": "24 499 988 ₽",
+            "percent": 10
         }
     }
 }
