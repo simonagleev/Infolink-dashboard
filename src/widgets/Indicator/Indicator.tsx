@@ -22,8 +22,6 @@ import ArrowUp from "@mui/icons-material/ArrowUpward";
 import Remove from "@mui/icons-material/RemoveCircleOutline";
 import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
 
-import AssignsProblemsModal from "../../common/AssignsProblemsModal";
-
 const useStyles = makeStyles({
   root: {
     position: "relative",
@@ -149,29 +147,6 @@ export const Indicator = ({
 
   return (
     <div className={classNames(classes.root, className)}>
-      <AssignsProblemsModal
-        title={`${name}. Проблемы и поручения`}
-        open={showModal}
-        onAccept={() => setShowModal(false)}
-        items={modalList}
-        color={color}
-        assignmentFn={(a) => ({
-          title: a.assignmentNumber,
-          description: a.description,
-          assigmentInfo: {
-            color: colorMap[a.statusCode],
-            status: a.status,
-            responsible: a.responsible,
-            deadline: a.deadline,
-          },
-        })}
-        modalFn={(m) => ({
-          title: `Проблема ${m.number}`,
-          description: `${m.description}`,
-          assignments: m.assignments,
-          isNew: m.isNew,
-        })}
-      />
       <Paper
         className={classes.root}
         style={{

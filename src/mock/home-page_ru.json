@@ -11,22 +11,64 @@
             }
         },
         "scope": {
-
+            "data": {
+                "color": "green",
+                "name": "Скоуп",
+                "iconType": "indicator_scope",
+                "dynamic": "updown",
+                "text1": "1 проблема (нет решения)",
+                "text2": "За неделю: +1 проблема"
+            }
         },
         "resources": {
-
+            "data": {
+                "color": "green",
+                "name": "Ресурсы",
+                "iconType": "indicator_resourses",
+                "dynamic": "updown",
+                "text1": "1 проблема (нет решения)",
+                "text2": "За неделю: +1 проблема"
+            }
         },
         "bek": {
-
+            "data": {
+                "color": "green",
+                "name": "БЭК",
+                "iconType": "indicator_bek",
+                "dynamic": "updown",
+                "text1": "1 проблема (нет решения)",
+                "text2": "За неделю: +1 проблема"
+            }
         },
         "deadline": {
-
+            "data": {
+                "color": "green",
+                "name": "Сроки",
+                "iconType": "indicator_deadline",
+                "dynamic": "updown",
+                "text1": "1 проблема (нет решения)",
+                "text2": "За неделю: +1 проблема"
+            }
         },
         "budget": {
-
+            "data": {
+                "color": "green",
+                "name": "Бюджет",
+                "iconType": "indicator_budget",
+                "dynamic": "updown",
+                "text1": "1 проблема (нет решения)",
+                "text2": "За неделю: +1 проблема"
+            }
         },
         "quality": {
-
+            "data": {
+                "color": "green",
+                "name": "Качество",
+                "iconType": "indicator_quality",
+                "dynamic": "updown",
+                "text1": "1 проблема (нет решения)",
+                "text2": "За неделю: +1 проблема"
+            }
         }
     }
 }
