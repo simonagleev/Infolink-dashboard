@@ -24,21 +24,14 @@ const useStyles = makeStyles<Theme>((theme) => ({
   root: {
     overflow: "hidden",
     padding: 5,
-    [theme.breakpoints.down("md")]: {
-      "& $content": {
-        alignItems: "flex-start",
-      },
-      "& $leftBlock": {
-        display: "none",
-      },
-      "& $rightBlock": {
-        display: "none",
-      },
+    "& $content": {
+      alignItems: "flex-start",
     },
-    [theme.breakpoints.up("lg")]: {
-      "& $bottomBlock": {
-        display: "none",
-      },
+    "& $leftBlock": {
+      display: "none",
+    },
+    "& $rightBlock": {
+      display: "none",
     },
   },
   content: {

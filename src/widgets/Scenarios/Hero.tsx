@@ -117,8 +117,8 @@ export const Hero = ({
         <div ref={contentRef} className={classes.content}>
           {tabs.find(({}, idx) => idx === indexD)?.element}
         </div>
+        <BottomFade dataRef={contentRef} />
       </div>
-      <BottomFade dataRef={contentRef} />
     </Paper>
   );
 };
