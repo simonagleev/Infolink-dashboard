@@ -1,10 +1,15 @@
 import React from 'react'
 
+import ioc from '../lib/ioc';
+
+import Scenarios from '../widgets/Scenarios'
+
 export const HomePage = () => {
     return (
-        <p>
-            123
-        </p>
+        <Scenarios
+            style={{ height: 300, width: 300}}
+            data={ioc.mockService.homePage.scenarios}
+        />
     );
 }
 
