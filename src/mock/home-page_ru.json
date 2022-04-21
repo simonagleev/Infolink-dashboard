@@ -2,7 +2,7 @@
     "indicators": {
         "communications": {
             "data": {
-                "color": "green",
+                "color": "orange",
                 "name": "Коммуникации",
                 "iconType": "indicator_communications",
                 "dynamic": "updown",
@@ -12,9 +12,9 @@
         },
         "scope": {
             "data": {
-                "color": "green",
-                "name": "Коммуникации",
-                "iconType": "indicator_communications",
+                "color": "red",
+                "name": "Скоуп",
+                "iconType": "indicator_scope",
                 "dynamic": "updown",
                 "text1": "1 проблема (нет решения)",
                 "text2": "За неделю: +1 проблема"
@@ -23,8 +23,8 @@
         "resources": {
             "data": {
                 "color": "green",
-                "name": "Коммуникации",
-                "iconType": "indicator_communications",
+                "name": "Ресурсы",
+                "iconType": "indicator_resources",
                 "dynamic": "updown",
                 "text1": "1 проблема (нет решения)",
                 "text2": "За неделю: +1 проблема"
@@ -33,8 +33,8 @@
         "bek": {
             "data": {
                 "color": "green",
-                "name": "Коммуникации",
-                "iconType": "indicator_communications",
+                "name": "БЭК",
+                "iconType": "indicator_bek",
                 "dynamic": "updown",
                 "text1": "1 проблема (нет решения)",
                 "text2": "За неделю: +1 проблема"
@@ -42,9 +42,9 @@
         },
         "deadline": {
             "data": {
-                "color": "green",
-                "name": "Коммуникации",
-                "iconType": "indicator_communications",
+                "color": "red",
+                "name": "Сроки",
+                "iconType": "indicator_deadline",
                 "dynamic": "updown",
                 "text1": "1 проблема (нет решения)",
                 "text2": "За неделю: +1 проблема"
@@ -52,9 +52,9 @@
         },
         "budget": {
             "data": {
-                "color": "green",
-                "name": "Коммуникации",
-                "iconType": "indicator_communications",
+                "color": "red",
+                "name": "Бюджет",
+                "iconType": "indicator_budget",
                 "dynamic": "updown",
                 "text1": "1 проблема (нет решения)",
                 "text2": "За неделю: +1 проблема"
@@ -62,9 +62,9 @@
         },
         "quality": {
             "data": {
-                "color": "green",
-                "name": "Коммуникации",
-                "iconType": "indicator_communications",
+                "color": "orange",
+                "name": "Качество",
+                "iconType": "indicator_quality",
                 "dynamic": "updown",
                 "text1": "1 проблема (нет решения)",
                 "text2": "За неделю: +1 проблема"

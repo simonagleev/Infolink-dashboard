@@ -21,11 +21,82 @@ const fields: TypedField[] = [
                     {
                         type: FieldType.Group,
                         columnsOverride: '7',
-                        
+
                         fields: [
                             {
                                 type: FieldType.Hero,
-                                height: '10vh',
+                                height: '20vh',
+                                columns: '1',
+                                child: {
+                                    type: FieldType.Component,
+                                    element: () => (
+                                        <Indicator
+                                            style={{ height: 300, width: 300}}
+                                            data={ioc.mockService.homePage.indicators.scope.data}
+                                        />
+                                    )
+                                }, 
+                            },
+                            {
+                                type: FieldType.Hero,
+                                height: '20vh',
+                                columns: '1',
+                                child: {
+                                    type: FieldType.Component,
+                                    element: () => (
+                                        <Indicator
+                                            style={{ height: 300, width: 300}}
+                                            data={ioc.mockService.homePage.indicators.deadline.data}
+                                        />
+                                    )
+                                }, 
+                            },
+                            {
+                                type: FieldType.Hero,
+                                height: '20vh',
+                                columns: '1',
+                                child: {
+                                    type: FieldType.Component,
+                                    element: () => (
+                                        <Indicator
+                                            style={{ height: 300, width: 300}}
+                                            data={ioc.mockService.homePage.indicators.budget.data}
+                                        />
+                                    )
+                                }, 
+                            },
+                            {
+                                type: FieldType.Hero,
+                                height: '20vh',
+                                columns: '1',
+                                child: {
+                                    type: FieldType.Component,
+                                    element: () => (
+                                        <Indicator
+                                            style={{ height: 300, width: 300}}
+                                            data={ioc.mockService.homePage.indicators.quality.data}
+                                        />
+                                    )
+                                }, 
+                            },
+                            {
+                                type: FieldType.Hero,
+                                height: '20vh',
+                                columns: '1',
+                                child: {
+                                    type: FieldType.Component,
+                                    element: () => (
+                                        <Indicator
+                                            style={{ height: 300, width: 300}}
+                                            data={ioc.mockService.homePage.indicators.resources.data}
+                                        />
+                                    )
+                                }, 
+                            },
+                            {
+                                type: FieldType.Hero,
+                                height: '20vh',
+                                columns: '1',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
@@ -38,78 +109,14 @@ const fields: TypedField[] = [
                             },
                             {
                                 type: FieldType.Hero,
-                                height: '10vh',
+                                height: '20vh',
+                                columns: '1',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
                                         <Indicator
                                             style={{ height: 300, width: 300}}
-                                            data={ioc.mockService.homePage.indicators.communications.data}
-                                        />
-                                    )
-                                }, 
-                            },
-                            {
-                                type: FieldType.Hero,
-                                height: '10vh',
-                                child: {
-                                    type: FieldType.Component,
-                                    element: () => (
-                                        <Indicator
-                                            style={{ height: 300, width: 300}}
-                                            data={ioc.mockService.homePage.indicators.communications.data}
-                                        />
-                                    )
-                                }, 
-                            },
-                            {
-                                type: FieldType.Hero,
-                                height: '10vh',
-                                child: {
-                                    type: FieldType.Component,
-                                    element: () => (
-                                        <Indicator
-                                            style={{ height: 300, width: 300}}
-                                            data={ioc.mockService.homePage.indicators.communications.data}
-                                        />
-                                    )
-                                }, 
-                            },
-                            {
-                                type: FieldType.Hero,
-                                height: '10vh',
-                                child: {
-                                    type: FieldType.Component,
-                                    element: () => (
-                                        <Indicator
-                                            style={{ height: 300, width: 300}}
-                                            data={ioc.mockService.homePage.indicators.communications.data}
-                                        />
-                                    )
-                                }, 
-                            },
-                            {
-                                type: FieldType.Hero,
-                                height: '10vh',
-                                child: {
-                                    type: FieldType.Component,
-                                    element: () => (
-                                        <Indicator
-                                            style={{ height: 300, width: 300}}
-                                            data={ioc.mockService.homePage.indicators.communications.data}
-                                        />
-                                    )
-                                }, 
-                            },
-                            {
-                                type: FieldType.Hero,
-                                height: '10vh',
-                                child: {
-                                    type: FieldType.Component,
-                                    element: () => (
-                                        <Indicator
-                                            style={{ height: 300, width: 300}}
-                                            data={ioc.mockService.homePage.indicators.communications.data}
+                                            data={ioc.mockService.homePage.indicators.bek.data}
                                         />
                                     )
                                 }, 
@@ -118,7 +125,7 @@ const fields: TypedField[] = [
                     },
                     {
                         type: FieldType.Hero,
-                        height: '40vh',
+                        height: '50vh',
                         columns: '4',
                         child: {
                             type: FieldType.Component,
