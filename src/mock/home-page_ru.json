@@ -1,0 +1,32 @@
+{
+    "indicators": {
+        "communications": {
+            "data": {
+                "color": "green",
+                "name": "Коммуникации",
+                "iconType": "indicator_communications",
+                "dynamic": "updown",
+                "text1": "1 проблема (нет решения)",
+                "text2": "За неделю: +1 проблема"
+            }
+        },
+        "scope": {
+
+        },
+        "resources": {
+
+        },
+        "bek": {
+
+        },
+        "deadline": {
+
+        },
+        "budget": {
+
+        },
+        "quality": {
+
+        }
+    }
+}
