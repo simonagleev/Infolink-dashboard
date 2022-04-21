@@ -79,43 +79,6 @@ export const BottomBlock = forwardRef(
               </React.Fragment>
             );
           })}
-          {/*<ImagePlacer
-            style={{ height: 35, width: 35 }}
-            src={data.overflowRisk.icon.src}
-          />*/}
-          <div>
-            <h3
-              style={{
-                color: data.overflowRisk.color,
-                margin: 0,
-              }}
-            >
-              {data.overflowRisk.name}
-            </h3>
-            <span style={{ color: "#6D7865", fontSize: 13 }}>
-              на {data.overflowRisk.percent}% -{" "}
-              {formatSum(data.overflowRisk.sum)}{" "}
-              {!String(data.overflowRisk.sum).includes("₽") && " ₽"}
-            </span>
-          </div>
-          {/*<ImagePlacer
-            style={{ height: 35, width: 35 }}
-            src={data.dynamic.icon.src}
-            />*/}
-          <div>
-            <h3
-              style={{
-                color: "#656D78",
-                margin: 0,
-                fontSize: 14,
-              }}
-            >
-              {data.dynamic.name}
-            </h3>
-            <h4 style={{ margin: 0, color: "#6D7865", fontWeight: 300 }}>
-              {data.dynamic.sum}
-            </h4>
-          </div>
         </div>
       </div>
     );
