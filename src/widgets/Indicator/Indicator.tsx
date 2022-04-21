@@ -91,8 +91,8 @@ const useStyles = makeStyles({
 
 interface IIndicatorProps {
   className?: string;
+  style?: React.CSSProperties;
   data: any;
-  colors: any;
   reverse?: boolean;
 }
 
@@ -113,17 +113,19 @@ export const Indicator = ({
   data: {
     color,
     name,
-    icon: { src: iconType },
-    dynamic: { src: dynamicSrc },
+    iconType,
+    dynamic,
     modal,
     text,
     text2,
   },
-  colors,
+  style,
   reverse = false,
 }: IIndicatorProps) => {
   const [showModal, setShowModal] = useState(false);
   const classes = useStyles();
+
+  debugger
 
   /**
    * Mobx хранит массивы следующим образом
@@ -137,16 +139,8 @@ export const Indicator = ({
     }
   };
 
-  const colorMap: Record<string, string> = Object.values<any>(colors).reduce(
-    (acm: any, { statusCode, color }: any) => ({
-      ...acm,
-      [statusCode]: color,
-    }),
-    {}
-  );
-
   return (
-    <div className={classNames(classes.root, className)}>
+    <div className={classNames(classes.root, className)} style={style}>
       <Paper
         className={classes.root}
         style={{
@@ -175,15 +169,15 @@ export const Indicator = ({
         </Typography>
         <div className={classes.desc}>
           <div className={classes.arrow}>
-            {dynamicSrc.includes("updown") ? (
+            {dynamic.includes("updown") ? (
               <ImportExport />
-            ) : dynamicSrc.includes("up") ? (
+            ) : dynamic.includes("up") ? (
               <ArrowUp />
-            ) : dynamicSrc.includes("down") ? (
+            ) : dynamic.includes("down") ? (
               <ArrowDown />
-            ) : dynamicSrc.includes("minus") ? (
+            ) : dynamic.includes("minus") ? (
               <Remove />
-            ) : dynamicSrc.includes("stop_dash") ? (
+            ) : dynamic.includes("stop_dash") ? (
               <RemoveCircleOutlineIcon />
             ) : (
               <></>
