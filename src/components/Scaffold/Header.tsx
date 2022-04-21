@@ -2,7 +2,7 @@ import React from 'react';
 
 import { observer } from "mobx-react";
 import { makeStyles } from '@mui/styles';
-import { alpha } from '@mui/material';
+import { alpha, Theme } from '@mui/material';
 
 import AppBar from '@mui/material/AppBar';
 import Grid from '@mui/material/Grid';
@@ -18,19 +18,16 @@ import ioc from '../../lib/ioc';
 
 const HEADER_HEIGHT = 50;
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles<Theme>((theme) => ({
     appBar: {
+        background: `${theme.palette.background.paper} !important`,
+        color: `${theme.palette.getContrastText(theme.palette.background.paper)} !important`,
         position: 'fixed',
         top: 0,
         left: 0,
         right: 0,
         bottom: 'auto',
         height: HEADER_HEIGHT,
-        '& .MuiTypography-root': {
-            lineHeight: 1,
-            fontWeight: 'bold',
-            color: alpha('#000', 0.8),
-        },
         '& .MuiGrid-item': {
             display: 'flex',
             alignItems: 'center',
@@ -64,14 +61,14 @@ export const Header = () => {
                         <Grid item>
                             <Box pl={1}>
                                 <Typography variant="h6">
-                                    Narfex Wallet
+                                    InfoLink Dashboard
                                 </Typography>
                             </Box>
                         </Grid>
                         <Grid item xs />
                         <Grid item>
                             <Box pr={1}>
-                                <IconButton onClick={handleClick} color="primary">
+                                <IconButton onClick={handleClick}>
                                     <Restore />
                                 </IconButton>
                             </Box>

@@ -2,8 +2,8 @@ import { makeAutoObservable } from "mobx";
 
 export class LayoutService {
 
-    private loaderCounter = 1;
-    private footerCounter = 1;
+    private loaderCounter = 0;
+    private footerCounter = 0;
     private headerCounter = 1;
 
     get hasLoader() {

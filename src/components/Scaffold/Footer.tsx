@@ -2,7 +2,7 @@ import React from 'react';
 
 import { observer } from "mobx-react";
 import { makeStyles } from '@mui/styles';
-import { alpha } from '@mui/material';
+import { alpha, Theme } from '@mui/material';
 
 import AppBar from '@mui/material/AppBar';
 import Grid from '@mui/material/Grid';
@@ -21,10 +21,10 @@ import ioc from '../../lib/ioc';
 
 const FOOTER_HEIGHT = 50;
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles<Theme>((theme) => ({
     footer: {
-        background: 'white !important',
-        color: `${alpha('#fff', 0.23)} !important`,
+        background: `${theme.palette.background.paper} !important`,
+        color: `${theme.palette.getContrastText(theme.palette.background.paper)} !important`,
         position: 'fixed',
         top: 'auto !important',
         bottom: 0,
@@ -36,10 +36,6 @@ const useStyles = makeStyles(() => ({
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center'
-        },
-        '& .MuiSvgIcon-root': {
-            lineHeight: 1,
-            color: alpha('#000', 0.23),
         },
     },
     adjust: {
