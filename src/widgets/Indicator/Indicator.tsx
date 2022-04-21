@@ -125,8 +125,6 @@ export const Indicator = ({
   const [showModal, setShowModal] = useState(false);
   const classes = useStyles();
 
-  debugger
-
   /**
    * Mobx хранит массивы следующим образом
    * {0: {…}, 1: {…}}
