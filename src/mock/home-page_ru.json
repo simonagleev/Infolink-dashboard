@@ -10,12 +10,66 @@
                 "text2": "За неделю: +1 проблема"
             }
         },
-        "scope": {},
-        "resources": {},
-        "bek": {},
-        "deadline": {},
-        "budget": {},
-        "quality": {}
+        "scope": {
+            "data": {
+                "color": "green",
+                "name": "Коммуникации",
+                "iconType": "indicator_communications",
+                "dynamic": "updown",
+                "text1": "1 проблема (нет решения)",
+                "text2": "За неделю: +1 проблема"
+            }
+        },
+        "resources": {
+            "data": {
+                "color": "green",
+                "name": "Коммуникации",
+                "iconType": "indicator_communications",
+                "dynamic": "updown",
+                "text1": "1 проблема (нет решения)",
+                "text2": "За неделю: +1 проблема"
+            }
+        },
+        "bek": {
+            "data": {
+                "color": "green",
+                "name": "Коммуникации",
+                "iconType": "indicator_communications",
+                "dynamic": "updown",
+                "text1": "1 проблема (нет решения)",
+                "text2": "За неделю: +1 проблема"
+            }
+        },
+        "deadline": {
+            "data": {
+                "color": "green",
+                "name": "Коммуникации",
+                "iconType": "indicator_communications",
+                "dynamic": "updown",
+                "text1": "1 проблема (нет решения)",
+                "text2": "За неделю: +1 проблема"
+            }
+        },
+        "budget": {
+            "data": {
+                "color": "green",
+                "name": "Коммуникации",
+                "iconType": "indicator_communications",
+                "dynamic": "updown",
+                "text1": "1 проблема (нет решения)",
+                "text2": "За неделю: +1 проблема"
+            }
+        },
+        "quality": {
+            "data": {
+                "color": "green",
+                "name": "Коммуникации",
+                "iconType": "indicator_communications",
+                "dynamic": "updown",
+                "text1": "1 проблема (нет решения)",
+                "text2": "За неделю: +1 проблема"
+            }
+        }
     },
     "scenarios": {
         "criteria": {
@@ -86,16 +140,6 @@
             "additional2": "В MPV = Подробнее >",
             "text": "Движемся по контролируемому сценарию",
             "bullet": "синий"
-        }
-    },
-    "sc_resume": {
-        "resume": "<span style='  font-size: 11pt;  color: #000000;  color: #000000;'></span><span style='  font-size: 11pt;  color: #000000;'>Работы по ГК ведутся по Заявкам в рамках 67 Объектов.<br/></span><span style='  font-size: 11pt;  color: #ff0000;'>Высоковероятен риск недобора дохода по 14 объектам.<br/></span><span style='  font-size: 11pt;  color: #000000;'><br/>По 53 объектам получено 75 Заявок, из них:<br/></span><span style='  font-size: 11pt;  color: #70ad47;'>* По графику - 31;</span><span style='  font-size: 11pt;  color: #000000;'><br/>закрыто Актами - 23;<br/>в работе - 8<br/><br/></span><span style='  font-size: 11pt;  color: #ff0000;'>* С просрочками:</span><span style='  font-size: 11pt;  color: #000000;'> &hellip;</span>",
-        "indicator": {
-          "src": "triangle_explanation"
-        },
-        "header": "ЗАКЛЮЧЕНИЕ СИТУАЦИОННОГО ЦЕНТРА",
-        "dynamic": {
-          "src": "round_yellow_arrow_updown"
         }
     }
 }
