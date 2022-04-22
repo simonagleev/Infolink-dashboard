@@ -1,9 +1,9 @@
-import { Action, Blocker, BrowserHistory, Listener, Location, State, To, createMemoryHistory } from "history";
+import { Action, Blocker, BrowserHistory, Listener, Location, State, To, createBrowserHistory } from "history";
 import { action, observable } from "mobx";
 
 import { makeObservable } from "mobx";
 
-const browserHistory = createMemoryHistory();
+const browserHistory = createBrowserHistory();
 
 export class RouterService implements BrowserHistory {
 

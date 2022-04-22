@@ -10,6 +10,7 @@ import {
 } from './config';
 
 import HomePage from './view/HomePage';
+import DemoPage from './view/DemoPage';
 
 const systemRoutes: ISwitchItem[] = [
   {
@@ -38,6 +39,10 @@ export const routes: ISwitchItem[] = [
   {
     path: '/home-page',
     element: HomePage,
+  },
+  {
+    path: '/demo-page',
+    element: DemoPage,
   },
   ...systemRoutes
 ];
