@@ -289,9 +289,102 @@
     ],
     "dynamicChartItems":[
         {
+            "code": "contract",
+            "color": "magenta",
+            "name": "Контракт",
+            "values": [
+                {
+                    "value": 15,
+                    "stamp": 19104
+                },
+                {
+                    "value": 35,
+                    "stamp": 19105
+                },
+                {
+                    "value": 50,
+                    "stamp": 19106
+                },
+                {
+                    "value": 60,
+                    "stamp": 19107
+                },
+                {
+                    "value": 117,
+                    "stamp": 19108
+                },
+                {
+                    "value": 110,
+                    "stamp": 19109
+                }
+            ]
+        },
+        {
+            "code": "scenario",
+            "color": "white",
+            "name": "Сценарий",
+            "values": [
+                {
+                    "value": 10,
+                    "stamp": 19104
+                },
+                {
+                    "value": 20,
+                    "stamp": 19105
+                },
+                {
+                    "value": 30,
+                    "stamp": 19106
+                },
+                {
+                    "value": 40,
+                    "stamp": 19107
+                },
+                {
+                    "value": 40,
+                    "stamp": 19108
+                },
+                {
+                    "value": 245,
+                    "stamp": 19109
+                }
+            ]
+        },
+        {
+            "code": "fact",
+            "color": "Yellow",
+            "name": "Фактически",
+            "values": [
+                {
+                    "value": 5,
+                    "stamp": 19104
+                },
+                {
+                    "value": 40,
+                    "stamp": 19105
+                },
+                {
+                    "value": 60,
+                    "stamp": 19106
+                },
+                {
+                    "value": 120,
+                    "stamp": 19107
+                },
+                {
+                    "value": 100,
+                    "stamp": 19108
+                },
+                {
+                    "value": 145,
+                    "stamp": 19109
+                }
+            ]
+        },
+        {
             "code": "plan",
             "color": "cyan",
-            "name": "Контракт",
+            "name": "План",
             "values": [
                 {
                     "value": 25,
@@ -320,20 +413,20 @@
             ]
         },
         {
-            "code": "contract",
-            "color": "magenta",
-            "name": "План",
+            "code": "progress",
+            "color": "Green",
+            "name": "Прогресс",
             "values": [
                 {
-                    "value": 15,
+                    "value": 105,
                     "stamp": 19104
                 },
                 {
-                    "value": 35,
+                    "value": 70,
                     "stamp": 19105
                 },
                 {
-                    "value": 95,
+                    "value": 70,
                     "stamp": 19106
                 },
                 {
@@ -341,14 +434,15 @@
                     "stamp": 19107
                 },
                 {
-                    "value": 117,
+                    "value": 130,
                     "stamp": 19108
                 },
                 {
-                    "value": 110,
+                    "value": 135,
                     "stamp": 19109
                 }
             ]
         }
+        
     ]
 }
