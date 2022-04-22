@@ -116,7 +116,7 @@ export const Indicator = ({
     iconType,
     dynamic,
     modal,
-    text,
+    text1,
     text2,
   },
   style,
@@ -162,7 +162,7 @@ export const Indicator = ({
               whiteSpace: "break-spaces",
             }}
           >
-            {text}
+            {text1}
           </pre>
         </Typography>
         <div className={classes.desc}>
