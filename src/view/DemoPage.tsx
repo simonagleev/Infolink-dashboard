@@ -1,36 +1,59 @@
 import React from 'react';
 
 import ColorProgressBar from '../components/common/ColorProgressBar';
+import StockChart, { IChartItem } from '../components/common/StockChart';
 
 export const DemoPage = () => {
 
-    const data = {
-        done: {
+    const items: IChartItem[] = [
+        {
+            code: 'plan',
             color: 'cyan',
-            title: 'Поле 1',
-            value: 10
+            name: 'Контракт',
+            values: [
+                {
+                    value: 25,
+                    stamp: 1,
+                },
+                {
+                    value: 50,
+                    stamp: 2,
+                },
+                {
+                    value: 100,
+                    stamp: 3,
+                }
+            ]
         },
-        inWork: {
+        {
+            code: 'contract',
             color: 'magenta',
-            title: 'Поле 1',
-            value: 10
-        },
-        notDone: {
-            color: 'orange',
-            title: 'Поле 1',
-            value: 10
-        },
-        offset: {
-            color: 'green',
-            title: 'Поле 1',
-            value: 10
-        },
-    };
+            name: 'План',
+            values: [
+                {
+                    value: 15,
+                    stamp: 1,
+                },
+                {
+                    value: 35,
+                    stamp: 2,
+                },
+                {
+                    value: 95,
+                    stamp: 3,
+                }
+            ]
+        }
+    ];
 
     return (
         <>
-            <ColorProgressBar
-                data={data}
+            <StockChart
+                items={items}
+                style={{
+                    height: 300,
+                    width: 300,
+                }}
             />
         </>
     );
