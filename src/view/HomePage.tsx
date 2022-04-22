@@ -10,6 +10,7 @@ import RevenueChart from '../widgets/RevenueChart';
 import Indicator from '../widgets/Indicator';
 
 import ioc from '../lib/ioc';
+import TimeLoss from '../widgets/TimeLoss';
 
 const fields: TypedField[] = [
     {
@@ -162,8 +163,7 @@ const fields: TypedField[] = [
                         child: {
                             type: FieldType.Component,
                             element: () => (
-                                <SituationResume
-                                    data={ioc.mockService.homePage.sc_resume}
+                                <TimeLoss
                                 />
                             )
                         },

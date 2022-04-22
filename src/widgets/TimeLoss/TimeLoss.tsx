@@ -1,11 +1,17 @@
 import React from "react";
 
+import Paper from "@mui/material/Paper";
+
+import Toolbar from "./Toolbar";
+
 export const TimeLoss = () => {
     
     return (
-        <div>
-
-        </div>
+        <Paper>
+            <Toolbar
+                title={"Toolbar Power 1337"}
+            />
+        </Paper>
     )
 };
 
