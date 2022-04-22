@@ -17,7 +17,7 @@ import {
 
 import IChartItem from "./IChartItem";
 
-import { fromStockDate, stampLabel, toStockDate } from "../../../utils/getMomentStamp";
+import { fromStockDate, stampLabel, toStockDate } from "../../utils/getMomentStamp";
 
 interface IChartProps {
   height: number;

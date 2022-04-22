@@ -1,7 +1,8 @@
 import React from 'react';
 
-import ColorProgressBar from '../components/common/ColorProgressBar';
-import StockChart, { IChartItem } from '../components/common/StockChart';
+import IChartItem from '../widgets/DynamicChart/IChartItem';
+
+import DynamicChart from '../widgets/DynamicChart';
 
 export const DemoPage = () => {
 
@@ -48,8 +49,8 @@ export const DemoPage = () => {
 
     return (
         <>
-            <StockChart
-                items={items}
+            <DynamicChart
+                data={items}
                 style={{
                     height: 300,
                     width: 300,
