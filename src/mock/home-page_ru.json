@@ -295,27 +295,27 @@
             "values": [
                 {
                     "value": 25,
-                    "stamp": 1
+                    "stamp": 19104
                 },
                 {
                     "value": 50,
-                    "stamp": 2
+                    "stamp": 19105
                 },
                 {
                     "value": 90,
-                    "stamp": 3
+                    "stamp": 19106
                 },
                 {
                     "value": 110,
-                    "stamp": 4
+                    "stamp": 19107
                 },
                 {
                     "value": 120,
-                    "stamp": 5
+                    "stamp": 19108
                 },
                 {
                     "value": 145,
-                    "stamp": 6
+                    "stamp": 19109
                 }
             ]
         },
@@ -326,27 +326,27 @@
             "values": [
                 {
                     "value": 15,
-                    "stamp": 1
+                    "stamp": 19104
                 },
                 {
                     "value": 35,
-                    "stamp": 2
+                    "stamp": 19105
                 },
                 {
                     "value": 95,
-                    "stamp": 3
+                    "stamp": 19106
                 },
                 {
                     "value": 100,
-                    "stamp": 4
+                    "stamp": 19107
                 },
                 {
                     "value": 117,
-                    "stamp": 5
+                    "stamp": 19108
                 },
                 {
                     "value": 110,
-                    "stamp": 6
+                    "stamp": 19109
                 }
             ]
         }
