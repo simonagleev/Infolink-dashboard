@@ -17,7 +17,6 @@ import { NF_OFFLINE } from "../config";
 import "./config"
 
 import TYPES from "./types";
-import TimeLossService from './app/TimeLossService';
 
 const systemServices = {
     alertService: inject<AlertService>(TYPES.alertService),
@@ -30,8 +29,6 @@ const systemServices = {
 
 const appServices = {
     mockService: inject<MockService>(TYPES.mockService),
-    timeLossService: inject<TimeLossService>(TYPES.timeLossService),
-    
 };
 
 export const ioc = {

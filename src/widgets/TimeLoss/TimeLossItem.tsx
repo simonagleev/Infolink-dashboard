@@ -6,6 +6,7 @@ import Box from "@mui/material/Box";
 import { makeStyles } from "@mui/styles";
 import Typography from "@mui/material/Typography";
 import ioc from "../../lib/ioc";
+import { ListItemText } from "@mui/material";
 
 
 const useStyles = makeStyles(
@@ -15,34 +16,37 @@ const useStyles = makeStyles(
         },
         worker: {
             flex: 1,
+            border: '1px solid #fff'
         },
         bar: {
-            flex: 1,
+            flex: 2,
         }
     }
 )
 
 interface ITimeLossItemProps {
-    id: string
+    primaryLabel: string;
 }
 
-export const TimeLossListItem = (
-    {
-        id = '1'
-    }: ITimeLossItemProps) => {
+export const TimeLossItem = ({
+    primaryLabel
+}: ITimeLossItemProps) => {
 
     const classes = useStyles();
 
     return (
         <Box className={classes.root}>
-            <Box className={classes.root}>
-                <Typography></Typography>
+            <Box className={classes.worker}>
+                <ListItemText 
+                    primary={primaryLabel}
+                    secondary="July 20, 2014"
+                />
             </Box>
-            <Box className={classes.root}>
+            <Box className={classes.bar}>
 
             </Box>
         </Box>
     )
 };
 
-export default observer(TimeLossListItem);
+export default observer(TimeLossItem);

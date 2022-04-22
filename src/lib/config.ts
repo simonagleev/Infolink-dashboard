@@ -10,7 +10,6 @@ import LayoutService from './base/LayoutService';
 import MockService from './app/MockService';
 
 import TYPES from "./types";
-import TimeLossService from './app/TimeLossService';
 
 provide(TYPES.routerService, () => new RouterService());
 provide(TYPES.alertService, () => new AlertService());
@@ -20,4 +19,3 @@ provide(TYPES.apiService, () => new ApiService());
 provide(TYPES.layoutService, () => new LayoutService());
 
 provide(TYPES.mockService, () => new MockService());
-provide(TYPES.timeLossService, () => new TimeLossService());

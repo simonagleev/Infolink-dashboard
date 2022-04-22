@@ -4,6 +4,9 @@ import Paper from "@mui/material/Paper";
 
 import Toolbar from "./Toolbar";
 import { observer } from "mobx-react";
+import TimeLossItem from "./TimeLossItem";
+
+import ioc from "../../lib/ioc";
 
 export const TimeLoss = () => {
     
@@ -12,6 +15,9 @@ export const TimeLoss = () => {
             <Toolbar
                 title={"Toolbar Power 1337"}
             />
+            {ioc.mockService.homePage.timeConsumption.map(i => (
+                <TimeLossItem primaryLabel={i}/>
+            ))}
         </Paper>
     )
 };

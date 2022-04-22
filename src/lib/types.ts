@@ -10,8 +10,6 @@ const systemServices = {
 
 const appServices = {
     mockService: Symbol.for('mockService'),
-    timeLossService: Symbol.for('timeLossService'),
-    
 };
 
 export const TYPES = {
