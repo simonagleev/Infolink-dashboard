@@ -31,12 +31,21 @@ interface ITimeLossItemProps {
     name: string;
     avatar: string;
     occupation: string;
+    work: number;
+    overWork: number;
+    sickLeave: number;
+    offWork: number;
 }
+
 
 export const TimeLossItem = ({
     name,
     avatar,
-    occupation
+    occupation,
+    work,
+    overWork,
+    sickLeave,
+    offWork
 }: ITimeLossItemProps) => {
 
     const classes = useStyles();
@@ -46,19 +55,19 @@ export const TimeLossItem = ({
             <Box className={classes.row}>
                 <Box className={classes.worker}>
                     <Avatar alt="Remy Sharp" src={avatar} />
-                    <ListItemText 
+                    <ListItemText
                         primary={name}
                         secondary={occupation}
-                        sx={{flex:'none', marginLeft: '0.5em'}}
+                        sx={{ flex: 'none', marginLeft: '0.5em' }}
                     />
                 </Box>
                 <Box flex="1">
                     <ColorProgressBar data={{
-                        work: {color: '#4FC0E8', title: 'Работа', value: 30},
-                        overWork: {color: '#7FB537', title: 'Переработки', value: 30},
-                        sickLeave: {color: '#FE9B31', title: 'Больничные', value: 30},
-                        offWork: {color: '#FA5F5A', title: 'Отсутствие', value: 10}
-                    }}/>
+                        work: { color: '#4FC0E8', title: 'Работа', value: work },
+                        overWork: { color: '#7FB537', title: 'Переработки', value: overWork },
+                        sickLeave: { color: '#FE9B31', title: 'Больничные', value: sickLeave },
+                        offWork: { color: '#FA5F5A', title: 'Отсутствие', value: offWork }
+                    }} />
                 </Box>
             </Box>
         </Box>

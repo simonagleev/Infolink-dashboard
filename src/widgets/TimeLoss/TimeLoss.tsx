@@ -43,6 +43,10 @@ export const TimeLoss = () => {
                     name={i.name} 
                     avatar={i.avatar}
                     occupation={i.occupation}
+                    work={i.timeValues.work}
+                    overWork={i.timeValues.overWork}
+                    sickLeave={i.timeValues.overWork}
+                    offWork={i.timeValues.overWork}
                     />
                 ))}
             </Box>

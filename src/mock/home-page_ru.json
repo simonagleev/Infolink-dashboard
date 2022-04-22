@@ -210,39 +210,81 @@
     },
     "timeConsumption": [
         {
-            "name": "John Brown",
-            "occupation": "assistant",
-            "avatar": "https://mui.com/static/images/avatar/1.jpg"
+            "name": "Антон Гог",
+            "occupation": "Помощник руководителя",
+            "avatar": "https://mui.com/static/images/avatar/1.jpg",
+            "timeValues": {
+                "work": 50,
+                "overWork": 10,
+                "sickLeave": 20,
+                "offWork": 20
+            }
         },
         {
-            "name": "John Down",
-            "occupation": "manager",
-            "avatar": "https://mui.com/static/images/avatar/2.jpg"
+            "name": "Георгий Анонов",
+            "occupation": "Управляющий",
+            "avatar": "https://mui.com/static/images/avatar/2.jpg",
+            "timeValues": {
+                "work": 50,
+                "overWork": 10,
+                "sickLeave": 20,
+                "offWork": 20
+            }
         },
         {
-            "name": "Johanna Crown",
-            "occupation": "secretary",
-            "avatar": "https://mui.com/static/images/avatar/3.jpg"
+            "name": "Ирина Конова",
+            "occupation": "Секретарь",
+            "avatar": "https://mui.com/static/images/avatar/3.jpg",
+            "timeValues": {
+                "work": 50,
+                "overWork": 10,
+                "sickLeave": 20,
+                "offWork": 20
+            }
         },
         {
-            "name": "John Brow",
-            "occupation": "janitor",
-            "avatar": "https://mui.com/static/images/avatar/4.jpg"
+            "name": "Ольга Грамова",
+            "occupation": "Специалист по потребительским кредитам",
+            "avatar": "https://mui.com/static/images/avatar/4.jpg",
+            "timeValues": {
+                "work": 50,
+                "overWork": 10,
+                "sickLeave": 20,
+                "offWork": 20
+            }
         },
         {
-            "name": "John Cena",
-            "occupation": "CEO",
-            "avatar": "https://mui.com/static/images/avatar/5.jpg"
+            "name": "Олег Бубонов",
+            "occupation": "Исполнительный директор",
+            "avatar": "https://mui.com/static/images/avatar/5.jpg",
+            "timeValues": {
+                "work": 50,
+                "overWork": 10,
+                "sickLeave": 20,
+                "offWork": 20
+            }
         },
         {
-            "name": "John Wick",
-            "occupation": "security officer",
-            "avatar": "https://mui.com/static/images/avatar/6.jpg"
+            "name": "Тито Бронсон",
+            "occupation": "Сотрудник HR отдела",
+            "avatar": "https://mui.com/static/images/avatar/6.jpg",
+            "timeValues": {
+                "work": 50,
+                "overWork": 10,
+                "sickLeave": 20,
+                "offWork": 20
+            }
         },
         {
-            "name": "John Borjon",
-            "occupation": "office manager",
-            "avatar": "https://mui.com/static/images/avatar/7.jpg"
+            "name": "Алиса Азова",
+            "occupation": "Офис-менеджер",
+            "avatar": "https://mui.com/static/images/avatar/7.jpg",
+            "timeValues": {
+                "work": 50,
+                "overWork": 10,
+                "sickLeave": 20,
+                "offWork": 20
+            }
         }
     ]
 }
