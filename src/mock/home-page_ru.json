@@ -214,9 +214,9 @@
             "occupation": "Помощник руководителя",
             "avatar": "https://mui.com/static/images/avatar/1.jpg",
             "timeValues": {
-                "work": 50,
+                "work": 40,
                 "overWork": 10,
-                "sickLeave": 20,
+                "sickLeave": 30,
                 "offWork": 20
             }
         },
@@ -236,10 +236,10 @@
             "occupation": "Секретарь",
             "avatar": "https://mui.com/static/images/avatar/3.jpg",
             "timeValues": {
-                "work": 50,
-                "overWork": 10,
-                "sickLeave": 20,
-                "offWork": 20
+                "work": 38,
+                "overWork": 22,
+                "sickLeave": 30,
+                "offWork": 10
             }
         },
         {
@@ -247,8 +247,8 @@
             "occupation": "Специалист по потребительским кредитам",
             "avatar": "https://mui.com/static/images/avatar/4.jpg",
             "timeValues": {
-                "work": 50,
-                "overWork": 10,
+                "work": 40,
+                "overWork": 20,
                 "sickLeave": 20,
                 "offWork": 20
             }
@@ -258,10 +258,10 @@
             "occupation": "Исполнительный директор",
             "avatar": "https://mui.com/static/images/avatar/5.jpg",
             "timeValues": {
-                "work": 50,
-                "overWork": 10,
-                "sickLeave": 20,
-                "offWork": 20
+                "work": 60,
+                "overWork": 30,
+                "sickLeave": 10,
+                "offWork": 0
             }
         },
         {
@@ -269,9 +269,9 @@
             "occupation": "Сотрудник HR отдела",
             "avatar": "https://mui.com/static/images/avatar/6.jpg",
             "timeValues": {
-                "work": 50,
-                "overWork": 10,
-                "sickLeave": 20,
+                "work": 38,
+                "overWork": 12,
+                "sickLeave": 30,
                 "offWork": 20
             }
         },
