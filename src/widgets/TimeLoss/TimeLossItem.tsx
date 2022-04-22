@@ -54,10 +54,10 @@ export const TimeLossItem = ({
                 </Box>
                 <Box flex="1">
                     <ColorProgressBar data={{
-                        done: {color: '#4FC0E8', title: 'Работа', value: 30},
-                        inWork: {color: '#7FB537', title: 'Переработки', value: 30},
-                        notDone: {color: '#FE9B31', title: 'Больничные', value: 30},
-                        offset: {color: '#FA5F5A', title: 'Отсутствие', value: 10}
+                        work: {color: '#4FC0E8', title: 'Работа', value: 30},
+                        overWork: {color: '#7FB537', title: 'Переработки', value: 30},
+                        sickLeave: {color: '#FE9B31', title: 'Больничные', value: 30},
+                        offWork: {color: '#FA5F5A', title: 'Отсутствие', value: 10}
                     }}/>
                 </Box>
             </Box>

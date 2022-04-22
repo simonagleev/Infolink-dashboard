@@ -9,6 +9,7 @@ import Toolbar from "./Toolbar";
 import TimeLossItem from "./TimeLossItem";
 
 import ioc from "../../lib/ioc";
+import { Typography } from "@mui/material";
 
 export const TimeLoss = () => {
     
@@ -50,9 +51,46 @@ export const TimeLoss = () => {
                     position: 'absolute',
                     bottom: 10,
                     right: 30,
+                    zIndex: 2,
+                    opacity: '.7',
                 }}
             >
-                123
+                <Box
+                    sx={{
+                        display: 'flex',
+                        alignItems: 'center'
+                    }}
+                >
+                    <div style={{background: '#4FC0E8', width: 15, height: 15, borderRadius: '3px', marginRight: '5px'}}></div>
+                    <span>Работа</span>
+                </Box>
+                <Box
+                    sx={{
+                        display: 'flex',
+                        alignItems: 'center'
+                    }}
+                >
+                    <div style={{background: '#7FB537', width: 15, height: 15, borderRadius: '3px', marginRight: '5px'}}></div>
+                    <span>Перерабоки</span>
+                </Box>
+                <Box
+                    sx={{
+                        display: 'flex',
+                        alignItems: 'center'
+                    }}
+                >
+                    <div style={{background: '#FE9B31', width: 15, height: 15, borderRadius: '3px', marginRight: '5px'}}></div>
+                    <span>Больничные</span>
+                </Box>
+                <Box
+                    sx={{
+                        display: 'flex',
+                        alignItems: 'center'
+                    }}
+                >
+                    <div style={{background: '#FA5F5A', width: 15, height: 15, borderRadius: '3px', marginRight: '5px'}}></div>
+                    <span>Отстутствие</span>
+                </Box>
             </Box>
         </Paper>
     )
