@@ -17,7 +17,11 @@ export const TimeLoss = () => {
                 title={"Toolbar Power 1337"}
             />
             {ioc.mockService.homePage.timeConsumption.map(i => (
-                <TimeLossItem primaryLabel={i}/>
+                <TimeLossItem 
+                primaryLabel={i.primaryLabel} 
+                avatar={i.avatar}
+                occupation={i.occupation}
+                />
             ))}
         </Paper>
     )

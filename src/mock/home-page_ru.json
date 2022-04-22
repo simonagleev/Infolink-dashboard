@@ -209,8 +209,40 @@
         }
     },
     "timeConsumption": [
-        "1",
-        "2",
-        "3"
+        {
+            "primaryLabel": "John Brown",
+            "occupation": "assistant",
+            "avatar": "https://mui.com/static/images/avatar/1.jpg"
+        },
+        {
+            "primaryLabel": "John Down",
+            "occupation": "manager",
+            "avatar": "https://mui.com/static/images/avatar/2.jpg"
+        },
+        {
+            "primaryLabel": "Johanna Crown",
+            "occupation": "secretary",
+            "avatar": "https://mui.com/static/images/avatar/3.jpg"
+        },
+        {
+            "primaryLabel": "John Brow",
+            "occupation": "janitor",
+            "avatar": "https://mui.com/static/images/avatar/4.jpg"
+        },
+        {
+            "primaryLabel": "John Cena",
+            "occupation": "CEO",
+            "avatar": "https://mui.com/static/images/avatar/5.jpg"
+        },
+        {
+            "primaryLabel": "John Wick",
+            "occupation": "security officer",
+            "avatar": "https://mui.com/static/images/avatar/6.jpg"
+        },
+        {
+            "primaryLabel": "John Borjon",
+            "occupation": "office manager",
+            "avatar": "https://mui.com/static/images/avatar/7.jpg"
+        }
     ]
 }
