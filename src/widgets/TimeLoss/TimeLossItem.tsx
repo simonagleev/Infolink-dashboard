@@ -15,30 +15,26 @@ const useStyles = makeStyles(
             display: 'flex',
         },
         worker: {
-            flex: 99,
-            border: '1px solid #fff',
-            minWidth: '275px',
-        },
-        bar: {
-            flex: 1,
-            minWidth: '1px',
-        },
-        container: {
             display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center'
+            alignItems: 'center',
+        },
+        row: {
+            flex: 1,
+            paddingLeft: 15,
+            paddingRight: 15,
+            paddingBottom: 15
         }
     }
 )
 
 interface ITimeLossItemProps {
-    primaryLabel: string;
+    name: string;
     avatar: string;
     occupation: string;
 }
 
 export const TimeLossItem = ({
-    primaryLabel,
+    name,
     avatar,
     occupation
 }: ITimeLossItemProps) => {
@@ -47,28 +43,23 @@ export const TimeLossItem = ({
 
     return (
         <Box className={classes.root}>
-            <Box className={classes.bar}>
-                
-            </Box>
-            <Box className={classes.worker}>
-                <Box className={classes.container}>
+            <Box className={classes.row}>
+                <Box className={classes.worker}>
                     <Avatar alt="Remy Sharp" src={avatar} />
                     <ListItemText 
-                        primary={primaryLabel}
+                        primary={name}
                         secondary={occupation}
                         sx={{flex:'none', marginLeft: '0.5em'}}
                     />
                 </Box>
-                
-                <ColorProgressBar data={{
-                    done: {color: '#4FC0E8', title: 'Работа', value: 30},
-                    inWork: {color: '#7FB537', title: 'Переработки', value: 30},
-                    notDone: {color: '#FE9B31', title: 'Больничные', value: 30},
-                    offset: {color: '#FA5F5A', title: 'Отсутствие', value: 10}
-                }}/>
-            </Box>
-            <Box className={classes.bar}>
-                
+                <Box flex="1">
+                    <ColorProgressBar data={{
+                        done: {color: '#4FC0E8', title: 'Работа', value: 30},
+                        inWork: {color: '#7FB537', title: 'Переработки', value: 30},
+                        notDone: {color: '#FE9B31', title: 'Больничные', value: 30},
+                        offset: {color: '#FA5F5A', title: 'Отсутствие', value: 10}
+                    }}/>
+                </Box>
             </Box>
         </Box>
     )
