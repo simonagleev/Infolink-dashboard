@@ -30,16 +30,16 @@ const percent = (v: number, m = 100) =>
 const createProgressBar = (color: string, zIndex: number) =>
   withStyles({
     root: {
-      height: BAR_HEIGHT,
-      zIndex,
+      height: `${BAR_HEIGHT}px !important`,
+      zIndex: `${zIndex} !important`,
     },
     colorPrimary: {
-      backgroundColor: "transparent",
+      backgroundColor: "transparent !important",
     },
     bar: {
       borderTopRightRadius: 5,
       borderBottomRightRadius: 5,
-      backgroundColor: color,
+      backgroundColor: `${color} !important`,
     },
   })(LinearProgress);
 
@@ -50,7 +50,7 @@ const useStyles = makeStyles({
     flex: 1,
   },
   bar: {
-    position: "absolute",
+    position: "absolute !important" as "absolute",
     top: 0,
     left: 0,
     right: 10,
