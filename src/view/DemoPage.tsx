@@ -15,6 +15,7 @@ export const DemoPage = () => {
                 {
                     value: 25,
                     stamp: 1,
+                    
                 },
                 {
                     value: 50,

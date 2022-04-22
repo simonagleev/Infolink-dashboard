@@ -286,5 +286,69 @@
                 "offWork": 20
             }
         }
+    ],
+    "dynamicChartItems":[
+        {
+            "code": "plan",
+            "color": "cyan",
+            "name": "Контракт",
+            "values": [
+                {
+                    "value": 25,
+                    "stamp": 1
+                },
+                {
+                    "value": 50,
+                    "stamp": 2
+                },
+                {
+                    "value": 90,
+                    "stamp": 3
+                },
+                {
+                    "value": 110,
+                    "stamp": 4
+                },
+                {
+                    "value": 120,
+                    "stamp": 5
+                },
+                {
+                    "value": 145,
+                    "stamp": 6
+                }
+            ]
+        },
+        {
+            "code": "contract",
+            "color": "magenta",
+            "name": "План",
+            "values": [
+                {
+                    "value": 15,
+                    "stamp": 1
+                },
+                {
+                    "value": 35,
+                    "stamp": 2
+                },
+                {
+                    "value": 95,
+                    "stamp": 3
+                },
+                {
+                    "value": 100,
+                    "stamp": 4
+                },
+                {
+                    "value": 117,
+                    "stamp": 5
+                },
+                {
+                    "value": 110,
+                    "stamp": 6
+                }
+            ]
+        }
     ]
 }

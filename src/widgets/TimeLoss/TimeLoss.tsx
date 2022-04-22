@@ -9,7 +9,7 @@ import Toolbar from "./Toolbar";
 import TimeLossItem from "./TimeLossItem";
 
 import ioc from "../../lib/ioc";
-import { Typography } from "@mui/material";
+
 
 export const TimeLoss = () => {
     
@@ -17,6 +17,7 @@ export const TimeLoss = () => {
         <Paper
             sx={{
                 position: 'relative',
+                width: '50%'
             }}
         >
             <Toolbar

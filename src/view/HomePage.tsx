@@ -11,6 +11,7 @@ import Indicator from '../widgets/Indicator';
 
 import ioc from '../lib/ioc';
 import TimeLoss from '../widgets/TimeLoss';
+import DynamicChart from '../widgets/DynamicChart';
 
 const fields: TypedField[] = [
     {
@@ -121,6 +122,8 @@ const fields: TypedField[] = [
                         type: FieldType.Hero,
                         height: '30vh',
                         columns: '4',
+                        tabletColumns: '12',
+                        phoneColumns: '12',
                         child: {
                             type: FieldType.Component,
                             element: () => (
@@ -134,6 +137,8 @@ const fields: TypedField[] = [
                         type: FieldType.Hero,
                         height: '50vh',
                         columns: '4',
+                        tabletColumns: '12',
+                        phoneColumns: '12',
                         child: {
                             type: FieldType.Component,
                             element: () => (
@@ -147,6 +152,8 @@ const fields: TypedField[] = [
                         type: FieldType.Hero,
                         height: '30vh',
                         columns: '4',
+                        tabletColumns: '12',
+                        phoneColumns: '12',
                         child: {
                             type: FieldType.Component,
                             element: () => (
@@ -159,12 +166,26 @@ const fields: TypedField[] = [
                     {
                         type: FieldType.Hero,
                         height: '40vh',
-                        columns: '12',
+                        columns: '6',
+                        tabletColumns: '12',
+                        phoneColumns: '12',
                         child: {
                             type: FieldType.Component,
                             element: () => (
-                                <TimeLoss
-                                />
+                                <TimeLoss/>
+                            )
+                        },
+                    },
+                    {
+                        type: FieldType.Hero,
+                        height: '40vh',
+                        columns: '6',
+                        tabletColumns: '12',
+                        phoneColumns: '12',
+                        child: {
+                            type: FieldType.Component,
+                            element: () => (
+                                <DynamicChart data={ioc.mockService.homePage.dynamicChartItems}/>
                             )
                         },
                     },
