@@ -36,11 +36,11 @@ export const First = ({ data }: IFirstProps) => {
   return (
     <div
       style={{
-        paddingLeft: 15,
-        paddingRight: 15,
+        paddingLeft: 35,
+        paddingRight: 35,
       }}
     >
-      <div style={{ display: "inline-block" }}>
+      <div style={{ display: "inline-block", paddingBottom: 25, marginLeft: -30 }}>
         <h2
           style={{
             backgroundColor: data.status.color,

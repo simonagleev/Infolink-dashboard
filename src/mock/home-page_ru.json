@@ -2,7 +2,7 @@
     "indicators": {
         "communications": {
             "data": {
-                "color": "orange",
+                "color": "#FE9B31",
                 "name": "Коммуникации",
                 "iconType": "indicator_communications",
                 "dynamic": "updown",
@@ -12,7 +12,7 @@
         },
         "scope": {
             "data": {
-                "color": "red",
+                "color": "#FA5F5A",
                 "name": "Скоуп",
                 "iconType": "indicator_scope",
                 "dynamic": "updown",
@@ -22,7 +22,7 @@
         },
         "resources": {
             "data": {
-                "color": "green",
+                "color": "#7FB537",
                 "name": "Ресурсы",
                 "iconType": "indicator_resources",
                 "dynamic": "updown",
@@ -32,7 +32,7 @@
         },
         "bek": {
             "data": {
-                "color": "green",
+                "color": "#7FB537",
                 "name": "БЭК",
                 "iconType": "indicator_bek",
                 "dynamic": "updown",
@@ -42,7 +42,7 @@
         },
         "deadline": {
             "data": {
-                "color": "red",
+                "color": "#FA5F5A",
                 "name": "Сроки",
                 "iconType": "indicator_deadline",
                 "dynamic": "updown",
@@ -52,7 +52,7 @@
         },
         "budget": {
             "data": {
-                "color": "red",
+                "color": "#FA5F5A",
                 "name": "Бюджет",
                 "iconType": "indicator_budget",
                 "dynamic": "updown",
@@ -62,7 +62,7 @@
         },
         "quality": {
             "data": {
-                "color": "orange",
+                "color": "#FE9B31",
                 "name": "Качество",
                 "iconType": "indicator_quality",
                 "dynamic": "updown",

@@ -24,10 +24,14 @@ const useStyles = makeStyles({
       marginLeft: 2,
       marginRight: 2,
     },
+    '& .MuiTabs-root': {
+      minHeight: '47px !important',
+      maxHeight: '47px !important',
+    }
   },
   item: {
     position: "relative",
-    height: "calc(100% - 48px)",
+    height: "calc(100% - 42px)",
   },
   content: {
     position: "absolute",
@@ -57,6 +61,12 @@ const useStyles = makeStyles({
       color: "#656D78",
       marginTop: 5,
     },
+  },
+  line: {
+    width: "100%",
+    height: 2,
+    background: "#dbdbdb",
+    marginTop: -2
   },
 });
 
@@ -110,6 +120,7 @@ export const Hero = ({
           />
         ))}
       </Tabs>
+      <div className={classes.line} />
       <div
         className={classes.item}
         aria-labelledby={`scrollable-force-tab-${indexD}`}

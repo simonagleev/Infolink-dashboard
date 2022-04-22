@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { One } from 'react-declarative';
-import {TypedField} from 'react-declarative';
+import { TypedField } from 'react-declarative';
 import { FieldType } from 'react-declarative';
 
 import Scenarios from '../widgets/Scenarios'
@@ -31,11 +31,10 @@ const fields: TypedField[] = [
                                     type: FieldType.Component,
                                     element: () => (
                                         <Indicator
-                                            style={{ height: 300, width: 300}}
                                             data={ioc.mockService.homePage.indicators.scope.data}
                                         />
                                     )
-                                }, 
+                                },
                             },
                             {
                                 type: FieldType.Hero,
@@ -45,11 +44,10 @@ const fields: TypedField[] = [
                                     type: FieldType.Component,
                                     element: () => (
                                         <Indicator
-                                            style={{ height: 300, width: 300}}
                                             data={ioc.mockService.homePage.indicators.deadline.data}
                                         />
                                     )
-                                }, 
+                                },
                             },
                             {
                                 type: FieldType.Hero,
@@ -59,11 +57,10 @@ const fields: TypedField[] = [
                                     type: FieldType.Component,
                                     element: () => (
                                         <Indicator
-                                            style={{ height: 300, width: 300}}
                                             data={ioc.mockService.homePage.indicators.budget.data}
                                         />
                                     )
-                                }, 
+                                },
                             },
                             {
                                 type: FieldType.Hero,
@@ -73,11 +70,10 @@ const fields: TypedField[] = [
                                     type: FieldType.Component,
                                     element: () => (
                                         <Indicator
-                                            style={{ height: 300, width: 300}}
                                             data={ioc.mockService.homePage.indicators.quality.data}
                                         />
                                     )
-                                }, 
+                                },
                             },
                             {
                                 type: FieldType.Hero,
@@ -87,11 +83,10 @@ const fields: TypedField[] = [
                                     type: FieldType.Component,
                                     element: () => (
                                         <Indicator
-                                            style={{ height: 300, width: 300}}
                                             data={ioc.mockService.homePage.indicators.resources.data}
                                         />
                                     )
-                                }, 
+                                },
                             },
                             {
                                 type: FieldType.Hero,
@@ -101,11 +96,10 @@ const fields: TypedField[] = [
                                     type: FieldType.Component,
                                     element: () => (
                                         <Indicator
-                                            style={{ height: 300, width: 300}}
                                             data={ioc.mockService.homePage.indicators.communications.data}
                                         />
                                     )
-                                }, 
+                                },
                             },
                             {
                                 type: FieldType.Hero,
@@ -115,13 +109,25 @@ const fields: TypedField[] = [
                                     type: FieldType.Component,
                                     element: () => (
                                         <Indicator
-                                            style={{ height: 300, width: 300}}
                                             data={ioc.mockService.homePage.indicators.bek.data}
                                         />
                                     )
-                                }, 
+                                },
                             },
                         ]
+                    },
+                    {
+                        type: FieldType.Hero,
+                        height: '30vh',
+                        columns: '4',
+                        child: {
+                            type: FieldType.Component,
+                            element: () => (
+                                <Scenarios
+                                    data={ioc.mockService.homePage.scenarios}
+                                />
+                            )
+                        },
                     },
                     {
                         type: FieldType.Hero,
@@ -130,40 +136,37 @@ const fields: TypedField[] = [
                         child: {
                             type: FieldType.Component,
                             element: () => (
-                                <Scenarios
-                                    style={{ height: 300, width: 300}}
-                                    data={ioc.mockService.homePage.scenarios}
-                                />
-                            )
-                        }, 
-                    },
-                    {
-                        type: FieldType.Hero,
-                        height: '40vh',
-                        columns: '4',
-                        child: {
-                            type: FieldType.Component,
-                            element: () => (
                                 <RevenueChart
-                                    style={{ height: 300, width: 300}}
                                     data={ioc.mockService.homePage.revenue}
                                 />
                             )
-                        }, 
+                        },
                     },
                     {
                         type: FieldType.Hero,
-                        height: '40vh',
+                        height: '30vh',
                         columns: '4',
                         child: {
                             type: FieldType.Component,
                             element: () => (
                                 <SituationResume
-                                    style={{ height: 300, width: 300}}
                                     data={ioc.mockService.homePage.sc_resume}
                                 />
                             )
-                        }, 
+                        },
+                    },
+                    {
+                        type: FieldType.Hero,
+                        height: '40vh',
+                        columns: '12',
+                        child: {
+                            type: FieldType.Component,
+                            element: () => (
+                                <SituationResume
+                                    data={ioc.mockService.homePage.sc_resume}
+                                />
+                            )
+                        },
                     },
                 ]
             }
@@ -192,7 +195,7 @@ export const HomePage = () => {
                 data={ioc.mockService.homePage.indicators.communications.data}
             /> */}
 
-            <One fields={fields}/>
+            <One fields={fields} />
         </>
 
     );
