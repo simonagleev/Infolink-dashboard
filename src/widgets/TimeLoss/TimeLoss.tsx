@@ -1,9 +1,10 @@
 import React from "react";
 
+import { observer } from "mobx-react";
+
 import Paper from "@mui/material/Paper";
 
 import Toolbar from "./Toolbar";
-import { observer } from "mobx-react";
 import TimeLossItem from "./TimeLossItem";
 
 import ioc from "../../lib/ioc";

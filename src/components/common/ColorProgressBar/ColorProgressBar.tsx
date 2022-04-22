@@ -48,10 +48,11 @@ const useStyles = makeStyles({
     position: "relative",
     height: BAR_HEIGHT,
     flex: 1,
+    
   },
   bar: {
     position: "absolute !important" as "absolute",
-    top: 0,
+    top: '42%',
     left: 0,
     right: 10,
   },
