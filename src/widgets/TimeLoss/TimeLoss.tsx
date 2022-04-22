@@ -3,6 +3,7 @@ import React from "react";
 import Paper from "@mui/material/Paper";
 
 import Toolbar from "./Toolbar";
+import { observer } from "mobx-react";
 
 export const TimeLoss = () => {
     
@@ -15,4 +16,4 @@ export const TimeLoss = () => {
     )
 };
 
-export default TimeLoss;
+export default observer(TimeLoss);
