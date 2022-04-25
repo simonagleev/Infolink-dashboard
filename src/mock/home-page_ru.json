@@ -13,7 +13,7 @@
         "scope": {
             "data": {
                 "color": "#FA5F5A",
-                "name": "Scope",
+                "name": "Staff",
                 "iconType": "indicator_scope",
                 "dynamic": "updown",
                 "text1": "3 problems (no solutions)",
