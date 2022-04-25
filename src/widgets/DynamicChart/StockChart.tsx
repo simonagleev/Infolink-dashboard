@@ -138,7 +138,7 @@ const Chart = ({ height, width, items }: IChartProps) => {
           }
         },
         priceFormatter(price: number) {
-          return Math.max(price, 0);
+          return Number(Math.max(price, 0).toFixed(0));
         },
       },
     });
