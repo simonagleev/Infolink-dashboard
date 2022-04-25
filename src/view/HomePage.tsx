@@ -246,6 +246,8 @@ const fields: TypedField[] = [
                         phoneColumns: '12',
                         phoneBottom: '10px',
                         tabletBottom: '10px',
+                        phoneMinHeight: '300px',
+                        tabletMinHeight: '300px',
                         child: {
                             type: FieldType.Component,
                             element: () => (

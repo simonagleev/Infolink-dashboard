@@ -22,8 +22,8 @@ const useStyles = makeStyles<Theme>((theme) => ({
       zIndex: 9,
       background: `linear-gradient(
                 to bottom,
-                #fff0,
-                #fff
+                #00000000,
+                #000000
             )`,
     },
   },

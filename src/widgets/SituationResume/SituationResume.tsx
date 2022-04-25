@@ -73,7 +73,7 @@ export const SituationResume = ({ data, className, style }: ISituationResumeProp
         className={classes.content}
         dangerouslySetInnerHTML={{ __html: processTextDecoration(data.resume) }}
       />
-      <BottomFade dataRef={elementRef} />
+      {/*<BottomFade dataRef={elementRef} />*/}
     </Paper>
   );
 };

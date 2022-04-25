@@ -93,7 +93,7 @@ export const Outputs = ({ data, className, style }: IOutputsProps) => {
             __html: processTextDecoration(data.resume),
           }}
         />
-        <BottomFade />
+        {/*<BottomFade />*/}
       </div>
     </Paper>
   );
