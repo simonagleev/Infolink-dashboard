@@ -294,38 +294,7 @@
             "name": "Контракт",
             "values": [
                 {
-                    "value": 15,
-                    "stamp": 19104
-                },
-                {
-                    "value": 35,
-                    "stamp": 19105
-                },
-                {
-                    "value": 50,
-                    "stamp": 19106
-                },
-                {
-                    "value": 60,
-                    "stamp": 19107
-                },
-                {
-                    "value": 117,
-                    "stamp": 19108
-                },
-                {
-                    "value": 110,
-                    "stamp": 19109
-                }
-            ]
-        },
-        {
-            "code": "scenario",
-            "color": "#FE9B31",
-            "name": "Сценарий",
-            "values": [
-                {
-                    "value": 10,
+                    "value": 5,
                     "stamp": 19104
                 },
                 {
@@ -341,11 +310,42 @@
                     "stamp": 19107
                 },
                 {
-                    "value": 40,
+                    "value": 50,
                     "stamp": 19108
                 },
                 {
-                    "value": 245,
+                    "value": 60,
+                    "stamp": 19109
+                }
+            ]
+        },
+        {
+            "code": "scenario",
+            "color": "#FE9B31",
+            "name": "Сценарий",
+            "values": [
+                {
+                    "value": 10,
+                    "stamp": 19104
+                },
+                {
+                    "value": 35,
+                    "stamp": 19105
+                },
+                {
+                    "value": 45,
+                    "stamp": 19106
+                },
+                {
+                    "value": 55,
+                    "stamp": 19107
+                },
+                {
+                    "value": 65,
+                    "stamp": 19108
+                },
+                {
+                    "value": 75,
                     "stamp": 19109
                 }
             ]
@@ -356,19 +356,19 @@
             "name": "Фактически",
             "values": [
                 {
-                    "value": 5,
+                    "value": 35,
                     "stamp": 19104
                 },
                 {
-                    "value": 40,
+                    "value": 55,
                     "stamp": 19105
                 },
                 {
-                    "value": 60,
+                    "value": 65,
                     "stamp": 19106
                 },
                 {
-                    "value": 120,
+                    "value": 75,
                     "stamp": 19107
                 },
                 {
@@ -376,7 +376,7 @@
                     "stamp": 19108
                 },
                 {
-                    "value": 145,
+                    "value": 110,
                     "stamp": 19109
                 }
             ]
@@ -391,7 +391,7 @@
                     "stamp": 19104
                 },
                 {
-                    "value": 50,
+                    "value": 70,
                     "stamp": 19105
                 },
                 {
@@ -407,7 +407,7 @@
                     "stamp": 19108
                 },
                 {
-                    "value": 145,
+                    "value": 135,
                     "stamp": 19109
                 }
             ]
@@ -418,27 +418,27 @@
             "name": "Прогресс",
             "values": [
                 {
-                    "value": 105,
+                    "value": 30,
                     "stamp": 19104
                 },
                 {
-                    "value": 70,
+                    "value": 75,
                     "stamp": 19105
                 },
                 {
-                    "value": 70,
+                    "value": 95,
                     "stamp": 19106
                 },
                 {
-                    "value": 100,
+                    "value": 120,
                     "stamp": 19107
                 },
                 {
-                    "value": 130,
+                    "value": 135,
                     "stamp": 19108
                 },
                 {
-                    "value": 135,
+                    "value": 155,
                     "stamp": 19109
                 }
             ]

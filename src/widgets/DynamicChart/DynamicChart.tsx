@@ -92,7 +92,7 @@ const useStyles = makeStyles<Theme>((theme) => ({
     },
     "& > span": {
       flex: 1,
-      color: "#656D78",
+      color: "#fff",
       fontSize: 11,
     },
   },
