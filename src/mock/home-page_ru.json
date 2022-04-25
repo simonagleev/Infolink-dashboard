@@ -92,8 +92,8 @@
                 {
                     "number": "3",
                     "color": "#7FB537",
-                    "text": "Processing of two new applicationsивших в рамках ДС в контрактные сроки.",
-                    "status": ""
+                    "text": "Processing of two new applications from partners in contract terms.",
+                    "status": "Done"
                 }
             ]
         },
@@ -111,14 +111,14 @@
                     "name": "Second",
                     "status_color": "#FE9B31",
                     "description": "The second stage description (text formatting available)",
-                    "status": "Риск просрочки"
+                    "status": "Risk of a dalay"
                 },
                 {
                     "number": "3",
                     "name": "Third",
                     "status_color": "#FA5F5A",
                     "description": "The third stage description (text formatting available)",
-                    "status": "Просрочено"
+                    "status": "Delayed"
                 }
             ]
         },
@@ -136,9 +136,9 @@
         ],
         "status": {
             "color": "#7FB537",
-            "additional1": "Критерии выполнены. Подробнее >",
-            "additional2": "В MPV = Подробнее >",
-            "text": "Движемся по контролируемому сценарию",
+            "additional1": "Creteria are fulfilled. More... >",
+            "additional2": "In MPV = more >",
+            "text": "According to the scenario",
             "bullet": "синий"
         }
     },
