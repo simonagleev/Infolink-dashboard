@@ -17,7 +17,7 @@ export const Second = ({ data }: ISecondProps) => {
         paddingRight: 15,
       }}
     >
-      <h4 style={{ color: "#656D78", margin: 0 }}>{data.criteria.text}</h4>
+      <h4 style={{ color: "#fff", margin: 0 }}>{data.criteria.text}</h4>
       {itemList.map((item, idx) => (
         <React.Fragment key={idx}>
           <div style={{ display: "flex", marginTop: 10 }}>
@@ -25,7 +25,7 @@ export const Second = ({ data }: ISecondProps) => {
             <div style={{ display: "flex", flexDirection: "column", gap: 5 }}>
               <h3
                 style={{
-                  color: "#434A54",
+                  color: "#fff",
                   fontSize: 12,
                   fontWeight: 200,
                   margin: 0,
@@ -55,7 +55,7 @@ export const Second = ({ data }: ISecondProps) => {
               </div>
               <span
                 style={{
-                  color: "#434A54",
+                  color: "#FA5F5A",
                   fontSize: 13,
                   margin: 0,
                 }}

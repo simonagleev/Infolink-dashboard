@@ -16,7 +16,7 @@ export const Third = ({ data }: IThirdProps) => {
             <Number>{item.number}</Number>
             <h3
               style={{
-                color: "#434A54",
+                color: "#fff",
                 fontSize: 18,
                 fontWeight: 200,
                 margin: 0,

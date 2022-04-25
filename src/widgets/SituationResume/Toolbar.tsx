@@ -86,7 +86,7 @@ export const Toolbar = ({
             style={{
               fontWeight: 700,
               fontSize: 14,
-              color: "#656D78",
+              color: "#ebebeb",
               maxWidth: "calc(100% - 64px)",
               whiteSpace: "nowrap",
               overflow: "hidden",
