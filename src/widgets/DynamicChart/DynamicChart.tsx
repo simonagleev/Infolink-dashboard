@@ -25,11 +25,11 @@ interface IDynamicChartProps {
 }
 
 const priorityMap: any = {
-  contract: 5,
-  scenario: 4,
-  fact: 3,
-  progress: 2,
-  plan: 1,
+  contract: 1,
+  scenario: 2,
+  fact: 5,
+  plan: 3,
+  progress: 4,
 };
 
 const useStyles = makeStyles<Theme>((theme) => ({

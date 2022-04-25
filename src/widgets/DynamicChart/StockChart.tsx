@@ -26,11 +26,11 @@ interface IChartProps {
 }
 
 const priorityMap: any = {
-  contract: 5,
-  scenario: 4,
-  fact: 3,
-  plan: 2,
-  progress: 1,
+  contract: 1,
+  scenario: 2,
+  fact: 5,
+  plan: 3,
+  progress: 4,
 };
 
 const useStyles = makeStyles({
@@ -87,13 +87,13 @@ const sort = (arr: any[]) =>
 type Ref = React.MutableRefObject<HTMLDivElement>;
 
 const seriesCommonOptions: DeepPartial<LineStyleOptions & SeriesOptionsCommon> =
-  {
-    lineWidth: 2,
-    crosshairMarkerVisible: false,
-    lastValueVisible: false,
-    priceLineVisible: false,
-    priceScaleId: "left",
-  };
+{
+  lineWidth: 2,
+  crosshairMarkerVisible: false,
+  lastValueVisible: false,
+  priceLineVisible: false,
+  priceScaleId: "left",
+};
 
 const Chart = ({ height, width, items }: IChartProps) => {
   const classes = useStyles();

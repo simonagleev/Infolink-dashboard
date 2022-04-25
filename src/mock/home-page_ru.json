@@ -80,20 +80,20 @@
                     "color": "#FA5F5A",
                     "description": "filed a lawsuit.",
                     "text": "Minimizing penalties in court: penalty calculating dependiong on the ptici f the Stage, not the contrtact price;\\debt relief due to COVID-19,",
-                    "status": "В работе"
+                    "status": "In progress"
                 },
                 {
                     "number": "2",
                     "color": "#FA5F5A",
-                    "description": "Закрытие заявки 1 перенесено на 2021г",
-                    "text": "Закрытие до 31.12.2020 заявки №1 2019 и\\nпоступивших заявок в 2020г. до 15.08.20\\nкроме приостановленных",
-                    "status": "Не выполнен"
+                    "description": "Application comptetion date changed to 12.12.2021",
+                    "text": "Processing the application #174 2019 until 31.12.2020 and processing of apllications recieved in 2020 until 15.08.2021 (exept suspended)",
+                    "status": "Failed"
                 },
                 {
                     "number": "3",
                     "color": "#7FB537",
-                    "text": "Закрытие 2х новых заявок, поступивших в рамках ДС в контрактные сроки.",
-                    "status": "Выполнено"
+                    "text": "Processing of two new applicationsивших в рамках ДС в контрактные сроки.",
+                    "status": ""
                 }
             ]
         },
@@ -225,9 +225,9 @@
             "avatar": "https://mui.com/static/images/avatar/2.jpg",
             "timeValues": {
                 "work": 10,
-                "overTime": 40,
-                "sickLeave": 40,
-                "offWork": 10
+                "overTime": 20,
+                "sickLeave": 20,
+                "offWork": 50
             }
         },
         {
@@ -235,9 +235,9 @@
             "occupation": "Secretary",
             "avatar": "https://mui.com/static/images/avatar/3.jpg",
             "timeValues": {
-                "work": 38,
-                "overTime": 22,
-                "sickLeave": 30,
+                "work": 40,
+                "overTime": 5,
+                "sickLeave": 35,
                 "offWork": 10
             }
         },
@@ -288,47 +288,47 @@
     ],
     "dynamicChartItems":[
         {
-            "code": "contract",
-            "color": "#FA5F5A",
-            "name": "Contract",
-            "values": [
-                {
-                    "value": 5,
-                    "stamp": 19104
-                },
-                {
-                    "value": 20,
-                    "stamp": 19105
-                },
-                {
-                    "value": 30,
-                    "stamp": 19106
-                },
-                {
-                    "value": 40,
-                    "stamp": 19107
-                },
-                {
-                    "value": 50,
-                    "stamp": 19108
-                },
-                {
-                    "value": 60,
-                    "stamp": 19109
-                }
-            ]
-        },
-        {
-            "code": "scenario",
-            "color": "#FE9B31",
-            "name": "Scenario",
+            "code": "fact",
+            "color": "#656D78",
+            "name": "Fact",
             "values": [
                 {
                     "value": 10,
                     "stamp": 19104
                 },
                 {
-                    "value": 35,
+                    "value": 15,
+                    "stamp": 19105
+                },
+                {
+                    "value": 40,
+                    "stamp": 19106
+                },
+                {
+                    "value": 70,
+                    "stamp": 19107
+                },
+                {
+                    "value": 85,
+                    "stamp": 19108
+                },
+                {
+                    "value": 100,
+                    "stamp": 19109
+                }
+            ]
+        },
+        {
+            "code": "progress",
+            "color": "#7FB537",
+            "name": "Progress",
+            "values": [
+                {
+                    "value": 20,
+                    "stamp": 19104
+                },
+                {
+                    "value": 30,
                     "stamp": 19105
                 },
                 {
@@ -336,42 +336,11 @@
                     "stamp": 19106
                 },
                 {
-                    "value": 55,
+                    "value": 80,
                     "stamp": 19107
                 },
                 {
-                    "value": 65,
-                    "stamp": 19108
-                },
-                {
-                    "value": 75,
-                    "stamp": 19109
-                }
-            ]
-        },
-        {
-            "code": "fact",
-            "color": "#656D78",
-            "name": "Fact",
-            "values": [
-                {
-                    "value": 35,
-                    "stamp": 19104
-                },
-                {
-                    "value": 55,
-                    "stamp": 19105
-                },
-                {
-                    "value": 65,
-                    "stamp": 19106
-                },
-                {
-                    "value": 75,
-                    "stamp": 19107
-                },
-                {
-                    "value": 100,
+                    "value": 90,
                     "stamp": 19108
                 },
                 {
@@ -390,58 +359,88 @@
                     "stamp": 19104
                 },
                 {
-                    "value": 70,
+                    "value": 50,
                     "stamp": 19105
                 },
                 {
-                    "value": 90,
+                    "value": 60,
                     "stamp": 19106
                 },
                 {
-                    "value": 110,
+                    "value": 85,
                     "stamp": 19107
                 },
                 {
-                    "value": 120,
+                    "value": 100,
                     "stamp": 19108
                 },
                 {
-                    "value": 135,
+                    "value": 125,
                     "stamp": 19109
                 }
             ]
         },
         {
-            "code": "progress",
-            "color": "#7FB537",
-            "name": "Progress",
+            "code": "scenario",
+            "color": "#FE9B31",
+            "name": "Scenario",
             "values": [
                 {
-                    "value": 45,
+                    "value": 50,
                     "stamp": 19104
                 },
                 {
-                    "value": 75,
+                    "value": 65,
                     "stamp": 19105
                 },
                 {
-                    "value": 95,
+                    "value": 75,
                     "stamp": 19106
                 },
                 {
-                    "value": 120,
+                    "value": 105,
                     "stamp": 19107
                 },
                 {
-                    "value": 135,
+                    "value": 125,
                     "stamp": 19108
                 },
                 {
-                    "value": 155,
+                    "value": 145,
+                    "stamp": 19109
+                }
+            ]
+        },
+        {
+            "code": "contract",
+            "color": "#FA5F5A",
+            "name": "Contract",
+            "values": [
+                {
+                    "value": 50,
+                    "stamp": 19104
+                },
+                {
+                    "value": 70,
+                    "stamp": 19105
+                },
+                {
+                    "value": 85,
+                    "stamp": 19106
+                },
+                {
+                    "value": 115,
+                    "stamp": 19107
+                },
+                {
+                    "value": 140,
+                    "stamp": 19108
+                },
+                {
+                    "value": 165,
                     "stamp": 19109
                 }
             ]
         }
-        
     ]
 }
