@@ -33,6 +33,8 @@ const fields: TypedField[] = [
                                 desktopRight: '10px',
                                 phoneBottom: '10px',
                                 tabletBottom: '10px',
+                                phoneMinHeight: '225px',
+                                tabletMinHeight: '225px',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
@@ -51,6 +53,8 @@ const fields: TypedField[] = [
                                 desktopRight: '10px',
                                 phoneBottom: '10px',
                                 tabletBottom: '10px',
+                                phoneMinHeight: '225px',
+                                tabletMinHeight: '225px',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
@@ -69,6 +73,8 @@ const fields: TypedField[] = [
                                 desktopRight: '10px',
                                 phoneBottom: '10px',
                                 tabletBottom: '10px',
+                                phoneMinHeight: '225px',
+                                tabletMinHeight: '225px',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
@@ -87,6 +93,8 @@ const fields: TypedField[] = [
                                 desktopRight: '10px',
                                 phoneBottom: '10px',
                                 tabletBottom: '10px',
+                                phoneMinHeight: '225px',
+                                tabletMinHeight: '225px',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
@@ -105,6 +113,8 @@ const fields: TypedField[] = [
                                 desktopRight: '10px',
                                 phoneBottom: '10px',
                                 tabletBottom: '10px',
+                                phoneMinHeight: '225px',
+                                tabletMinHeight: '225px',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
@@ -123,6 +133,8 @@ const fields: TypedField[] = [
                                 desktopRight: '10px',
                                 phoneBottom: '10px',
                                 tabletBottom: '10px',
+                                phoneMinHeight: '225px',
+                                tabletMinHeight: '225px',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
@@ -138,6 +150,8 @@ const fields: TypedField[] = [
                                 columns: '1',
                                 phoneColumns: '7',
                                 tabletColumns: '7',
+                                phoneMinHeight: '225px',
+                                tabletMinHeight: '225px',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
@@ -178,8 +192,8 @@ const fields: TypedField[] = [
                         desktopTop: '10px',
                         desktopLeft: '10px',
                         desktopRight: '10px',
-                        
-                        
+                        phoneMinHeight: '500px',
+                        tabletMinHeight: '500px',
                         child: {
                             type: FieldType.Component,
                             element: () => (

@@ -68,7 +68,7 @@ export const First = ({ data }: IFirstProps) => {
             className={classes.root}
             activeStep={0}
             orientation="vertical"
-            style={{ marginTop: -25, marginLeft: -25 }}
+            style={{ marginTop: -25, marginLeft: -25, paddingBottom: 25 }}
           >
             <Step>
               <StepLabel>

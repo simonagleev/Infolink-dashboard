@@ -7,7 +7,7 @@
                 "iconType": "indicator_communications",
                 "dynamic": "updown",
                 "text1": "2 problems (no solutions)",
-                "text2": "За неделю: +1 проблема"
+                "text2": "This week: +1 problem"
             }
         },
         "scope": {
@@ -26,18 +26,18 @@
                 "name": "Resourses",
                 "iconType": "indicator_resources",
                 "dynamic": "updown",
-                "text1": "1 problem (no solutions)",
-                "text2": "This week: +1 problem"
+                "text1": "0 problems",
+                "text2": "0 problems"
             }
         },
         "bek": {
             "data": {
                 "color": "#7FB537",
-                "name": "Back-end",
+                "name": "Development",
                 "iconType": "indicator_bek",
                 "dynamic": "updown",
-                "text1": "1 problem (no solutions)",
-                "text2": "This week: +1 problem"
+                "text1": "0 problems",
+                "text2": "0 problems"
             }
         },
         "deadline": {
@@ -191,6 +191,7 @@
             },
             "sum": "2 000 500 $"
         },
+        "fullSum": "24 499 988 $",
         "overflowRisk": {
             "name": "Риск выхода за рамки бюджета\\nна  % - на р",
             "icon": {
