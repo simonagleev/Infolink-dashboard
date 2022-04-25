@@ -18,7 +18,6 @@ interface ISituationResumeProps {
 
 const useStyles = makeStyles({
   root: {
-    overflow: "hidden",
     padding: 5,
     position: "relative",
   },
@@ -27,8 +26,9 @@ const useStyles = makeStyles({
     paddingRight: 5,
     "& *": {
       fontSize: "12.5px !important",
+      color: 'white',
     },
-    height: "calc(100% - 65px)",
+    height: "calc(100% - 55px)",
     overflow: "hidden",
     overflowY: "scroll",
   },
@@ -52,9 +52,11 @@ export const SituationResume = ({ data, className, style }: ISituationResumeProp
     if (current) {
       current.querySelectorAll("*").forEach((el) => {
         const { color } = getComputedStyle(el);
-        // if (color !== "rgb(0, 0, 0)" && !color.includes("rgba(0, 0, 0")) {
-        //   (el as HTMLSpanElement).style.background = lighten(color, 0.9);
-        // }
+        if (color !== "rgb(0, 0, 0)" && !color.includes("rgba(0, 0, 0")) {
+          (el as HTMLSpanElement).style.background = '#424242'//lighten(color, 0.9);
+        } else {
+          (el as HTMLSpanElement).style.color = 'white';
+        }
       });
     }
   }, [data.resume]);
@@ -64,6 +66,7 @@ export const SituationResume = ({ data, className, style }: ISituationResumeProp
         leadingIcon={data.dynamic.src}
         trailingIcon={data.indicator.src}
         title={data.header}
+        style={{ background: '#424242', marginTop: -5, marginLeft: -5, marginRight: -5 }}
       />
       <div
         ref={elementRef}

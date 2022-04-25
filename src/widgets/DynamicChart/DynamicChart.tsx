@@ -111,7 +111,7 @@ export const DynamicChart = ({ data, className, style }: IDynamicChartProps) => 
 
   return (
     <Paper className={classNames(classes.root, className)} style={style}>
-      <Toolbar title={"Burn rate"} />
+      <Toolbar style={{ background: '#424242', marginLeft: -5, marginRight: -5 }} title={"Burn rate"} />
       <StockChart className={classes.content} title="%" items={data} />
       <div className={classes.info}>
         {itemList.map((item: any, idx: number) => {

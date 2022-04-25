@@ -61,16 +61,20 @@ interface IToolbarProps {
   leadingIcon?: string;
   trailingIcon?: string;
   title?: string;
+  className?: string;
+  style?: React.CSSProperties;
 }
 
 export const Toolbar = ({
   leadingIcon,
   trailingIcon,
   title,
+  className,
+  style,
 }: IToolbarProps) => {
   const classes = useStyles();
   return (
-    <>
+    <div className={className} style={style}>
       <div className={classes.root}>
         {leadingIcon && (
           <Box className={classes.box}>
@@ -99,7 +103,7 @@ export const Toolbar = ({
         )}
       </div>
       <div className={classes.line} />
-    </>
+    </div>
   );
 };
 

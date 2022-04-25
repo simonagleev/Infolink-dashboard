@@ -84,7 +84,7 @@ export const RevenueChart = ({ data, className, style }: IRevenueChartProps) => 
   const classes = useStyles();
   return (
     <Paper className={classNames(classes.root, className)} style={style}>
-      <Toolbar title={data.header} />
+      <Toolbar style={{ background: '#424242', marginTop: -5, marginLeft: -5, marginRight: -5 }} title={data.header} />
       <div className={classes.content}>
         <LeftBlock className={classes.leftBlock} data={data} />
         <div className={classes.chart}>

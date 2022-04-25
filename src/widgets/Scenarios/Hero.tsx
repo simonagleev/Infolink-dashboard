@@ -20,18 +20,18 @@ const useStyles = makeStyles({
     overflow: "hidden",
     "& button.MuiButtonBase-root.MuiTab-root": {
       borderBottom: "2px solid #dbdbdb",
-      marginTop: 4,
+      marginTop: 2,
       marginLeft: 2,
       marginRight: 2,
     },
     '& .MuiTabs-root': {
-      minHeight: '47px !important',
-      maxHeight: '47px !important',
+      minHeight: '42px !important',
+      maxHeight: '42px !important',
     }
   },
   item: {
     position: "relative",
-    height: "calc(100% - 42px)",
+    height: "calc(100% - 47px)",
   },
   content: {
     position: "absolute",

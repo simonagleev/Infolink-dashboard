@@ -66,7 +66,7 @@ export const Outputs = ({ data, className, style }: IOutputsProps) => {
 
   return (
     <Paper className={classNames(className, classes.root)} style={style}>
-      <Toolbar title={`${data.name} (${data.responsible})`} />
+      <Toolbar style={{ background: '#424242', marginTop: -5, marginLeft: -5, marginRight: -5 }} title={`${data.name} (${data.responsible})`} />
       <div style={{ display: "inline-block" }}>
         <h3
           style={{
