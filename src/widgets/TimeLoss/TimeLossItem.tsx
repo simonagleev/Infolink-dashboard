@@ -32,7 +32,7 @@ interface ITimeLossItemProps {
     avatar: string;
     occupation: string;
     work: number;
-    overWork: number;
+    overTime: number;
     sickLeave: number;
     offWork: number;
 }
@@ -43,7 +43,7 @@ export const TimeLossItem = ({
     avatar,
     occupation,
     work,
-    overWork,
+    overTime,
     sickLeave,
     offWork
 }: ITimeLossItemProps) => {
@@ -64,7 +64,7 @@ export const TimeLossItem = ({
                 <Box flex="1">
                     <ColorProgressBar data={{
                         work: { color: '#4FC0E8', title: 'Работа', value: work },
-                        overWork: { color: '#7FB537', title: 'Переработки', value: overWork },
+                        overTime: { color: '#7FB537', title: 'Переработки', value: overTime },
                         sickLeave: { color: '#FE9B31', title: 'Больничные', value: sickLeave },
                         offWork: { color: '#FA5F5A', title: 'Отсутствие', value: offWork }
                     }} />

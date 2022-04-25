@@ -45,9 +45,9 @@ export const TimeLoss = () => {
                     avatar={i.avatar}
                     occupation={i.occupation}
                     work={i.timeValues.work}
-                    overWork={i.timeValues.overWork}
-                    sickLeave={i.timeValues.overWork}
-                    offWork={i.timeValues.overWork}
+                    overTime={i.timeValues.overTime}
+                    sickLeave={i.timeValues.overTime}
+                    offWork={i.timeValues.overTime}
                     />
                 ))}
             </Box>
@@ -67,7 +67,7 @@ export const TimeLoss = () => {
                     }}
                 >
                     <div style={{background: '#4FC0E8', width: 15, height: 15, borderRadius: '3px', marginRight: '5px'}}></div>
-                    <span>Работа</span>
+                    <span>Work</span>
                 </Box>
                 <Box
                     sx={{
@@ -76,7 +76,7 @@ export const TimeLoss = () => {
                     }}
                 >
                     <div style={{background: '#7FB537', width: 15, height: 15, borderRadius: '3px', marginRight: '5px'}}></div>
-                    <span>Перерабоки</span>
+                    <span>Overtime work</span>
                 </Box>
                 <Box
                     sx={{
@@ -85,7 +85,7 @@ export const TimeLoss = () => {
                     }}
                 >
                     <div style={{background: '#FE9B31', width: 15, height: 15, borderRadius: '3px', marginRight: '5px'}}></div>
-                    <span>Больничные</span>
+                    <span>Sick leave</span>
                 </Box>
                 <Box
                     sx={{
@@ -94,7 +94,7 @@ export const TimeLoss = () => {
                     }}
                 >
                     <div style={{background: '#FA5F5A', width: 15, height: 15, borderRadius: '3px', marginRight: '5px'}}></div>
-                    <span>Отстутствие</span>
+                    <span>Off work</span>
                 </Box>
             </Box>
         </Paper>

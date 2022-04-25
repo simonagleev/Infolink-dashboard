@@ -50,7 +50,7 @@ export const PercentShow = ({
         <h3>{data.name}</h3>
         <span>
           {formatSum(data.sum)}
-          {!String(data.sum).includes("₽") && " ₽"}
+          {!String(data.sum).includes("$") && " $"}
         </span>
       </div>
     </div>

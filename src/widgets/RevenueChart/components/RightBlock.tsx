@@ -57,7 +57,7 @@ export const RightBlock = ({
       <div className={classes.grid} style={style}>
         {keys.map((k, idx) => {
           const { percent, color, name, sum } = data[k];
-          const symbol = !String(sum).includes("₽") && " ₽";
+          const symbol = !String(sum).includes("$") && " $";
           return (
             <React.Fragment key={idx}>
               <div className={classes.percentLabel} style={{ color }}>

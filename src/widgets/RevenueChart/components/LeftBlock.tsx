@@ -67,7 +67,7 @@ export const LeftBlock = ({ data, style = {}, className }: ILeftBlockProps) => {
       <div className={classes.grid} style={style}>
         {keys.map((k, idx) => {
           const { percent, color, name, sum } = data[k];
-          const symbol = !String(sum).includes("₽") && " ₽";
+          const symbol = !String(sum).includes("$") && " $";
           return (
             <React.Fragment key={idx}>
               <div className={classes.percentLabel} style={{ color }}>
@@ -99,7 +99,7 @@ export const LeftBlock = ({ data, style = {}, className }: ILeftBlockProps) => {
           </h3>
           <span style={{ color: "#6D7865" }}>
             на {data.overflowRisk.percent}% - {formatSum(data.overflowRisk.sum)}{" "}
-            {!String(data.overflowRisk.sum).includes("₽") && " ₽"}
+            {!String(data.overflowRisk.sum).includes("$") && " $"}
           </span>
         </div>
       </div>

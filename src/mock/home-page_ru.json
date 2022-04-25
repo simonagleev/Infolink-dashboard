@@ -3,83 +3,83 @@
         "communications": {
             "data": {
                 "color": "#FE9B31",
-                "name": "Коммуникации",
+                "name": "Communications",
                 "iconType": "indicator_communications",
                 "dynamic": "updown",
-                "text1": "1 проблема (нет решения)",
+                "text1": "2 problems (no solutions)",
                 "text2": "За неделю: +1 проблема"
             }
         },
         "scope": {
             "data": {
                 "color": "#FA5F5A",
-                "name": "Скоуп",
+                "name": "Scope",
                 "iconType": "indicator_scope",
                 "dynamic": "updown",
-                "text1": "1 проблема (нет решения)",
-                "text2": "За неделю: +1 проблема"
+                "text1": "3 problems (no solutions)",
+                "text2": "This week: +1 problem"
             }
         },
         "resources": {
             "data": {
                 "color": "#7FB537",
-                "name": "Ресурсы",
+                "name": "Resourses",
                 "iconType": "indicator_resources",
                 "dynamic": "updown",
-                "text1": "1 проблема (нет решения)",
-                "text2": "За неделю: +1 проблема"
+                "text1": "1 problem (no solutions)",
+                "text2": "This week: +1 problem"
             }
         },
         "bek": {
             "data": {
                 "color": "#7FB537",
-                "name": "БЭК",
+                "name": "Back-end",
                 "iconType": "indicator_bek",
                 "dynamic": "updown",
-                "text1": "1 проблема (нет решения)",
-                "text2": "За неделю: +1 проблема"
+                "text1": "1 problem (no solutions)",
+                "text2": "This week: +1 problem"
             }
         },
         "deadline": {
             "data": {
                 "color": "#FA5F5A",
-                "name": "Сроки",
+                "name": "Timelines",
                 "iconType": "indicator_deadline",
                 "dynamic": "updown",
-                "text1": "1 проблема (нет решения)",
-                "text2": "За неделю: +1 проблема"
+                "text1": "3 problems (no solutions)",
+                "text2": "This week: +1 problem"
             }
         },
         "budget": {
             "data": {
                 "color": "#FA5F5A",
-                "name": "Бюджет",
+                "name": "Budget",
                 "iconType": "indicator_budget",
                 "dynamic": "updown",
-                "text1": "1 проблема (нет решения)",
-                "text2": "За неделю: +1 проблема"
+                "text1": "3 problems (no solutions)",
+                "text2": "This week: +1 problem"
             }
         },
         "quality": {
             "data": {
                 "color": "#FE9B31",
-                "name": "Качество",
+                "name": "Quality",
                 "iconType": "indicator_quality",
                 "dynamic": "updown",
-                "text1": "1 проблема (нет решения)",
-                "text2": "За неделю: +1 проблема"
+                "text1": "2 problems (no solutions)",
+                "text2": "This week: +1 problem"
             }
         }
     },
     "scenarios": {
         "criteria": {
-            "text": "Критерии выхода на безрисковое состояние",
+            "text": "Creteria of achieving the risk-freee state",
             "items": [
                 {
                     "number": "1",
                     "color": "#FA5F5A",
-                    "description": "Подали иск",
-                    "text": "Минимизация неустоек через суд: расчет пени от цены Этапа, а не Контракта;\\nсписания из за covid,",
+                    "description": "filed a lawsuit.",
+                    "text": "Minimizing penalties in court: penalty calculating dependiong on the ptici f the Stage, not the contrtact price;\\debt relief due to COVID-19,",
                     "status": "В работе"
                 },
                 {
@@ -101,23 +101,23 @@
             "items": [
                 {
                     "number": "1",
-                    "name": "Первый этап",
+                    "name": "First stage",
                     "status_color": "#7FB537",
-                    "description": "Описание этапа 1 с форматированием",
-                    "status": "По графику"
+                    "description": "The first stage description (text formatting available)",
+                    "status": "On schedule"
                 },
                 {
                     "number": "2",
-                    "name": "Второй этап",
+                    "name": "Second",
                     "status_color": "#FE9B31",
-                    "description": "Описание этапа 2 с форматированием",
+                    "description": "The second stage description (text formatting available)",
                     "status": "Риск просрочки"
                 },
                 {
                     "number": "3",
-                    "name": "Третий этап",
+                    "name": "Third",
                     "status_color": "#FA5F5A",
-                    "description": "Описание этапа 3 с форматированием",
+                    "description": "The third stage description (text formatting available)",
                     "status": "Просрочено"
                 }
             ]
@@ -125,13 +125,13 @@
         "items": [
             {
                 "bulletColor": "#4FC0E8",
-                "header": "Заявки 2019",
-                "text": "Исполнение с просрочками.\\nСрок исполнения не определен"
+                "header": "Applications 2019",
+                "text": "Late performance."
             },
             {
                 "bulletColor": "#4FC0E8",
-                "header": "Новые заявки 2020",
-                "text": "Исполнение с юридической поддержкой и фиксацией просрочек по вине заказчика с учетом фокусировки на сдаче Заявки №2019."
+                "header": "New applications 2020",
+                "text": "Performance with the legal support and documentation of delays due to the Customer's fault. Focus on the aplication №2019."
             }
         ],
         "status": {
@@ -143,54 +143,53 @@
         }
     },
     "sc_resume": {
-        "resume": "<span style='  font-size: 11pt;  color: ;  color: #000000;'></span><span style='  font-size: 11pt;  color: #000000;'>Работы по ГК ведутся по Заявкам в рамках 67 Объектов.<br/></span><span style='  font-size: 11pt;  color: #ff0000;'>Высоковероятен риск недобора дохода по 14 объектам.<br/></span><span style='  font-size: 11pt;  color: #000000;'><br/>По 53 объектам получено 75 Заявок, из них:<br/></span><span style='  font-size: 11pt;  color: #70ad47;'>* По графику - 31;</span><span style='  font-size: 11pt;  color: #000000;'><br/>закрыто Актами - 23;<br/>в работе - 8<br/><br/></span><span style='  font-size: 11pt;  color: #ff0000;'>* С просрочками:</span><span style='  font-size: 11pt;  color: #000000;'> &hellip;</span>",
+        "resume": "<span style='  font-size: 11pt;  color: ;  color: #000000;'></span><span style='  font-size: 11pt;  color: #000000;'>Work on government contracts is performed on 67 Facilities.<br/></span><span style='  font-size: 11pt;  color: #ff0000;'>14 facilities have shortfall risk.<br/></span><span style='  font-size: 11pt;  color: #000000;'><br/>75 applications recieved (53 facilities), including:<br/></span><span style='  font-size: 11pt;  color: #70ad47;'>* On schedule - 31;</span><span style='  font-size: 11pt;  color: #000000;'><br/>with completion certificate  - 23;<br/>in process - 8<br/><br/></span><span style='  font-size: 11pt;  color: #ff0000;'>* with delays:</span><span style='  font-size: 11pt;  color: #000000;'> &hellip;</span>",
         "indicator": {
             "src": "triangle_explanation"
         },
-        "header": "ЗАКЛЮЧЕНИЕ СИТУАЦИОННОГО ЦЕНТРА",
+        "header": "Opinion of the control room",
         "dynamic": {
             "src": "round_yellow_arrow_updown"
         }
     },
     "revenue": {
         "income": {
-            "name": "Получена оплата",
+            "name": "Income",
             "color": "#4FC0E8",
             "sum": "12249994",
             "percent": 15
         },
         "risks": {
             "color": "#7FB537",
-            "name": "Заложено на риски",
-            "sum": "73 499 965 ₽",
+            "name": "Risk",
+            "sum": "73 499 965 $",
             "percent": 20
         },
         "inwork": {
             "color": "#967BDC",
-            "name": "В работе",
+            "name": "In work",
             "sum": "146999930",
             "percent": 15
         },
         "riskShortfall": {
             "color": "#FE9B31",
-            "name": "Риск недобора",
-            "comment": "(вероятность 50%)",
-            "sum": "61 249 971 ₽",
+            "name": "Shortfall risk",
+            "sum": "61 249 971 $",
             "percent": 25
         },
         "penalty": {
             "color": "#FA5F5A",
-            "name": "Оплачено неустоек",
-            "sum": "48 128 791 ₽",
+            "name": "Penalty",
+            "sum": "48 128 791 $",
             "percent": 10
         },
-        "header": "ДИАГРАММА ВЫРУЧКИ",
+        "header": "REVENUE CHART",
         "dynamic": {
             "name": "Динамика за неделю",
             "icon": {
                 "src": "round_green_arrow_up"
             },
-            "sum": "2 000 500 ₽"
+            "sum": "2 000 500 $"
         },
         "overflowRisk": {
             "name": "Риск выхода за рамки бюджета\\nна  % - на р",
@@ -202,86 +201,86 @@
         },
         "penaltyRisk": {
             "color": "#FFCA28",
-            "name": "Риск неустоек",
+            "name": "Penalty risk",
             "comment": "(обращение в суд)",
-            "sum": "24 499 988 ₽",
+            "sum": "24 499 988 $",
             "percent": 10
         }
     },
     "timeConsumption": [
         {
-            "name": "Антон Гог",
-            "occupation": "Помощник руководителя",
+            "name": "Jeremy Brown",
+            "occupation": "Mortgage consultant",
             "avatar": "https://mui.com/static/images/avatar/1.jpg",
             "timeValues": {
-                "work": 40,
-                "overWork": 10,
-                "sickLeave": 30,
-                "offWork": 20
+                "work": 10,
+                "overTime": 10,
+                "sickLeave": 20,
+                "offWork": 60
             }
         },
         {
-            "name": "Георгий Анонов",
-            "occupation": "Управляющий",
+            "name": "Andrew Joahn",
+            "occupation": "Asset manager",
             "avatar": "https://mui.com/static/images/avatar/2.jpg",
             "timeValues": {
-                "work": 50,
-                "overWork": 10,
-                "sickLeave": 20,
-                "offWork": 20
+                "work": 10,
+                "overTime": 40,
+                "sickLeave": 40,
+                "offWork": 10
             }
         },
         {
-            "name": "Ирина Конова",
-            "occupation": "Секретарь",
+            "name": "Ann Juhnson",
+            "occupation": "Secretary",
             "avatar": "https://mui.com/static/images/avatar/3.jpg",
             "timeValues": {
                 "work": 38,
-                "overWork": 22,
+                "overTime": 22,
                 "sickLeave": 30,
                 "offWork": 10
             }
         },
         {
-            "name": "Ольга Грамова",
-            "occupation": "Специалист по потребительским кредитам",
+            "name": "Sara Hamilton",
+            "occupation": "Financial advisor",
             "avatar": "https://mui.com/static/images/avatar/4.jpg",
             "timeValues": {
                 "work": 40,
-                "overWork": 20,
+                "overTime": 20,
                 "sickLeave": 20,
                 "offWork": 20
             }
         },
         {
-            "name": "Олег Бубонов",
-            "occupation": "Исполнительный директор",
+            "name": "Jeremy Gog",
+            "occupation": "Financial analyst",
             "avatar": "https://mui.com/static/images/avatar/5.jpg",
             "timeValues": {
                 "work": 60,
-                "overWork": 30,
+                "overTime": 30,
                 "sickLeave": 10,
                 "offWork": 0
             }
         },
         {
-            "name": "Тито Бронсон",
-            "occupation": "Сотрудник HR отдела",
+            "name": "Tito Bronson",
+            "occupation": "Internal auditor",
             "avatar": "https://mui.com/static/images/avatar/6.jpg",
             "timeValues": {
                 "work": 38,
-                "overWork": 12,
+                "overTime": 12,
                 "sickLeave": 30,
                 "offWork": 20
             }
         },
         {
-            "name": "Алиса Азова",
-            "occupation": "Офис-менеджер",
+            "name": "Mirka Bartos",
+            "occupation": "Loan officer",
             "avatar": "https://mui.com/static/images/avatar/7.jpg",
             "timeValues": {
                 "work": 50,
-                "overWork": 10,
+                "overTime": 10,
                 "sickLeave": 20,
                 "offWork": 20
             }
@@ -291,7 +290,7 @@
         {
             "code": "contract",
             "color": "#FA5F5A",
-            "name": "Контракт",
+            "name": "Contract",
             "values": [
                 {
                     "value": 5,
@@ -322,7 +321,7 @@
         {
             "code": "scenario",
             "color": "#FE9B31",
-            "name": "Контролируемый сценарий",
+            "name": "Scenario",
             "values": [
                 {
                     "value": 10,
@@ -353,7 +352,7 @@
         {
             "code": "fact",
             "color": "#656D78",
-            "name": "Факт",
+            "name": "Fact",
             "values": [
                 {
                     "value": 35,
@@ -384,7 +383,7 @@
         {
             "code": "plan",
             "color": "#4FC0E8",
-            "name": "План",
+            "name": "Plan",
             "values": [
                 {
                     "value": 40,
@@ -415,7 +414,7 @@
         {
             "code": "progress",
             "color": "#7FB537",
-            "name": "Прогресс",
+            "name": "Progress",
             "values": [
                 {
                     "value": 45,

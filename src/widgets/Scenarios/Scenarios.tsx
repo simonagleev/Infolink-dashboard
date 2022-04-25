@@ -24,15 +24,15 @@ export const Scenarios = ({ data, className, style }: IScenariosProps) => {
 
   const tabs = [
     {
-      label: "Сценарий",
+      label: "Scenario",
       element: <First data={data} />,
     },
     {
-      label: "Критерии",
+      label: "Criteria",
       element: <Second data={data} />,
     },
     {
-      label: "Этапы",
+      label: "Stages",
       element: <Third data={data} />,
     },
   ];

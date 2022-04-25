@@ -113,7 +113,17 @@ export const RevenueChart = ({ data, className, style }: IRevenueChartProps) => 
                   margin: 0,
                 }}
               >
-                Госконтракт
+                Government
+              </p>
+              <p
+                style={{
+                  color: "#656D78",
+                  fontWeight: 600,
+                  fontSize: 13,
+                  margin: 0,
+                }}
+              >
+                contract
               </p>
               <i
                 style={{
@@ -123,7 +133,7 @@ export const RevenueChart = ({ data, className, style }: IRevenueChartProps) => 
                   margin: 0,
                 }}
               >
-                {`${formatSum(data.fullSum)} ₽`}
+                {`${formatSum(data.fullSum)} $`}
               </i>
             </div>
           </Chart>

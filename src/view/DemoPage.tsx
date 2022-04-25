@@ -10,7 +10,7 @@ export const DemoPage = () => {
         {
             code: 'plan',
             color: 'cyan',
-            name: 'Контракт',
+            name: 'Contract',
             values: [
                 {
                     value: 25,
