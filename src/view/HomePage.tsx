@@ -157,10 +157,12 @@ const fields: TypedField[] = [
                         columns: '6',
                         tabletColumns: '12',
                         phoneColumns: '12',
-                        bottom: '10px',
-                        top: '10px',
+                        desktopBottom: '10px',
+                        desktopTop: '10px',
                         desktopLeft: '10px',
                         desktopRight: '10px',
+                        
+                        
                         child: {
                             type: FieldType.Component,
                             element: () => (
