@@ -290,7 +290,7 @@
     "dynamicChartItems":[
         {
             "code": "contract",
-            "color": "magenta",
+            "color": "#FA5F5A",
             "name": "Контракт",
             "values": [
                 {
@@ -321,7 +321,7 @@
         },
         {
             "code": "scenario",
-            "color": "white",
+            "color": "#FE9B31",
             "name": "Сценарий",
             "values": [
                 {
@@ -352,7 +352,7 @@
         },
         {
             "code": "fact",
-            "color": "Yellow",
+            "color": "#656D78",
             "name": "Фактически",
             "values": [
                 {
@@ -383,7 +383,7 @@
         },
         {
             "code": "plan",
-            "color": "cyan",
+            "color": "#4FC0E8",
             "name": "План",
             "values": [
                 {
@@ -414,7 +414,7 @@
         },
         {
             "code": "progress",
-            "color": "Green",
+            "color": "#7FB537",
             "name": "Прогресс",
             "values": [
                 {
