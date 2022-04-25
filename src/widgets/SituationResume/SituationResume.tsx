@@ -28,7 +28,7 @@ const useStyles = makeStyles({
     "& *": {
       fontSize: "12.5px !important",
     },
-    maxHeight: "calc(100% - 65px)",
+    height: "calc(100% - 65px)",
     overflow: "hidden",
     overflowY: "scroll",
   },

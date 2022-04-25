@@ -137,6 +137,9 @@ const Chart = ({ height, width, items }: IChartProps) => {
             return stampLabel(stamp);
           }
         },
+        priceFormatter(price: number) {
+          return Math.max(price, 0);
+        },
       },
     });
 
