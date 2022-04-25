@@ -216,23 +216,7 @@ export const StockChart = ({
   <Box className={className} style={style}>
     <AutoSizer>
       {({ height, width }) => (
-        <div style={{ height, width }}>
-          <p
-            style={{
-              margin: 0,
-              height: 25,
-              fontWeight: 400,
-              fontSize: 12,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              maxWidth: 100,
-            }}
-          >
-            {title}
-          </p>
-          <Chart height={height - 25} width={width} items={items} />
-        </div>
+        <Chart height={height - 25} width={width - 10} items={items} />
       )}
     </AutoSizer>
   </Box>

@@ -31,6 +31,8 @@ const fields: TypedField[] = [
                                 phoneColumns: '7',
                                 tabletColumns: '7',
                                 desktopRight: '10px',
+                                phoneBottom: '10px',
+                                tabletBottom: '10px',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
@@ -47,6 +49,8 @@ const fields: TypedField[] = [
                                 phoneColumns: '7',
                                 tabletColumns: '7',
                                 desktopRight: '10px',
+                                phoneBottom: '10px',
+                                tabletBottom: '10px',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
@@ -63,6 +67,8 @@ const fields: TypedField[] = [
                                 phoneColumns: '7',
                                 tabletColumns: '7',
                                 desktopRight: '10px',
+                                phoneBottom: '10px',
+                                tabletBottom: '10px',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
@@ -79,6 +85,8 @@ const fields: TypedField[] = [
                                 phoneColumns: '7',
                                 tabletColumns: '7',
                                 desktopRight: '10px',
+                                phoneBottom: '10px',
+                                tabletBottom: '10px',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
@@ -95,6 +103,8 @@ const fields: TypedField[] = [
                                 phoneColumns: '7',
                                 tabletColumns: '7',
                                 desktopRight: '10px',
+                                phoneBottom: '10px',
+                                tabletBottom: '10px',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
@@ -111,6 +121,8 @@ const fields: TypedField[] = [
                                 phoneColumns: '7',
                                 tabletColumns: '7',
                                 desktopRight: '10px',
+                                phoneBottom: '10px',
+                                tabletBottom: '10px',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (

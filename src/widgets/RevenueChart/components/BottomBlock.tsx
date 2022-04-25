@@ -52,7 +52,7 @@ export const BottomBlock = forwardRef(
       "risks",
       "income",
       "penalty",
-      "inwork",
+      /*"inwork",*/
       "penaltyRisk",
       "riskShortfall",
     ];

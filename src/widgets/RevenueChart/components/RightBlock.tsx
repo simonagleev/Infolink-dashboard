@@ -47,7 +47,7 @@ export const RightBlock = ({
 }: IRightBlockProps) => {
   const classes = useStyles();
 
-  const keys = ["income", "inwork"];
+  const keys = ["income",/* "inwork"*/];
 
   return (
     <div
