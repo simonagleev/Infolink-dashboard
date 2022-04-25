@@ -32,9 +32,7 @@ const useStyles = makeStyles({
     width: "100%",
     height: "100%",
     minHeight: 190,
-    padding: 5,
     cursor: "pointer",
-    marginBottom: '10px',
   },
   title: {
     color: "white",

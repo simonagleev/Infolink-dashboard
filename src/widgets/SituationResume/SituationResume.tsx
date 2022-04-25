@@ -52,9 +52,9 @@ export const SituationResume = ({ data, className, style }: ISituationResumeProp
     if (current) {
       current.querySelectorAll("*").forEach((el) => {
         const { color } = getComputedStyle(el);
-        if (color !== "rgb(0, 0, 0)" && !color.includes("rgba(0, 0, 0")) {
-          (el as HTMLSpanElement).style.background = lighten(color, 0.9);
-        }
+        // if (color !== "rgb(0, 0, 0)" && !color.includes("rgba(0, 0, 0")) {
+        //   (el as HTMLSpanElement).style.background = lighten(color, 0.9);
+        // }
       });
     }
   }, [data.resume]);

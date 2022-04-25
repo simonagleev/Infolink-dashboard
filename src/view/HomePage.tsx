@@ -30,6 +30,7 @@ const fields: TypedField[] = [
                                 columns: '1',
                                 phoneColumns: '7',
                                 tabletColumns: '7',
+                                desktopRight: '10px',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
@@ -45,6 +46,7 @@ const fields: TypedField[] = [
                                 columns: '1',
                                 phoneColumns: '7',
                                 tabletColumns: '7',
+                                desktopRight: '10px',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
@@ -60,6 +62,7 @@ const fields: TypedField[] = [
                                 columns: '1',
                                 phoneColumns: '7',
                                 tabletColumns: '7',
+                                desktopRight: '10px',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
@@ -75,6 +78,7 @@ const fields: TypedField[] = [
                                 columns: '1',
                                 phoneColumns: '7',
                                 tabletColumns: '7',
+                                desktopRight: '10px',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
@@ -90,6 +94,7 @@ const fields: TypedField[] = [
                                 columns: '1',
                                 phoneColumns: '7',
                                 tabletColumns: '7',
+                                desktopRight: '10px',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
@@ -105,6 +110,7 @@ const fields: TypedField[] = [
                                 columns: '1',
                                 phoneColumns: '7',
                                 tabletColumns: '7',
+                                desktopRight: '10px',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
@@ -120,7 +126,6 @@ const fields: TypedField[] = [
                                 columns: '1',
                                 phoneColumns: '7',
                                 tabletColumns: '7',
-                                
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
@@ -134,7 +139,7 @@ const fields: TypedField[] = [
                     },
                     {
                         type: FieldType.Hero,
-                        height: '50vh',
+                        height: '45vh',
                         columns: '3',
                         tabletColumns: '12',
                         phoneColumns: '12',
@@ -153,7 +158,7 @@ const fields: TypedField[] = [
                     },
                     {
                         type: FieldType.Hero,
-                        height: '50vh',
+                        height: '45vh',
                         columns: '6',
                         tabletColumns: '12',
                         phoneColumns: '12',
@@ -174,7 +179,7 @@ const fields: TypedField[] = [
                     },
                     {
                         type: FieldType.Hero,
-                        height: '50vh',
+                        height: '45vh',
                         columns: '3',
                         tabletColumns: '12',
                         phoneColumns: '12',
