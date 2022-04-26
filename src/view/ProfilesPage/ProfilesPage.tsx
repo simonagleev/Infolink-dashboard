@@ -53,7 +53,7 @@ const columns: IColumn<IPerson>[] = [
     width: 'max(8vw, 125px)',
     element: ({ KPI }) => (
       <span style={{
-        color: KPI < 50 ? 'red' : KPI < 70 ? 'orange' : 'green',
+        color: KPI < 50 ? '#FA5F5A' : KPI < 70 ? '#FE9B31' : '#7FB537',
         display: 'flex',
         alignItems: 'center'
       }}>
