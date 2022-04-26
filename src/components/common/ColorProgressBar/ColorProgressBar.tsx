@@ -20,7 +20,7 @@ interface IColorProgressBarProps {
     work: IDimension;
     overTime: IDimension;
     sickLeave: IDimension;
-    offWork: IDimension;
+    downTime: IDimension;
   }
 }
 
@@ -61,7 +61,7 @@ const useStyles = makeStyles({
 export const ColorProgressBar = (props: IColorProgressBarProps) => {
   const classes = useStyles();
 
-  const keys = ["work", "overTime", "sickLeave", "offWork"];
+  const keys = ["work", "overTime", "sickLeave", "downTime"];
 
   const getColor = (key: string) => (props.data as any)[key]?.color;
   const getValue = (key: string) => (props.data as any)[key]?.value;

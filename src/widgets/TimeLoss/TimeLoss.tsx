@@ -22,7 +22,7 @@ export const TimeLoss = () => {
         >
             <Toolbar
                 style={{position: 'sticky', top: 0, background: '#424242', zIndex: 99}}
-                title={"Toolbar Power 1337"}
+                title="Average work time"
             />
             <Box
                 sx={{
@@ -47,7 +47,7 @@ export const TimeLoss = () => {
                     work={i.timeValues.work}
                     overTime={i.timeValues.overTime}
                     sickLeave={i.timeValues.overTime}
-                    offWork={i.timeValues.overTime}
+                    downTime={i.timeValues.overTime}
                     />
                 ))}
             </Box>
@@ -94,7 +94,7 @@ export const TimeLoss = () => {
                     }}
                 >
                     <div style={{background: '#FA5F5A', width: 15, height: 15, borderRadius: '3px', marginRight: '5px'}}></div>
-                    <span>Off work</span>
+                    <span>Downtime</span>
                 </Box>
             </Box>
         </Paper>

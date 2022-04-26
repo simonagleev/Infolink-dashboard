@@ -11,6 +11,9 @@ import {
 
 import HomePage from './view/HomePage';
 import DemoPage from './view/DemoPage';
+import ProfilesPage from './view/ProfilesPage';
+import OneProfilePage from './view/OneProfilePage';
+import IndicatorsPage from './view/IndicatorsPage';
 
 const systemRoutes: ISwitchItem[] = [
   {
@@ -43,6 +46,18 @@ export const routes: ISwitchItem[] = [
   {
     path: '/demo-page',
     element: DemoPage,
+  },
+  {
+    path: '/profiles-list',
+    element: ProfilesPage,
+  },
+  {
+    path: '/profiles-list/:id',
+    element: OneProfilePage,
+  },
+  {
+    path: '/indicators',
+    element: IndicatorsPage,
   },
   ...systemRoutes
 ];

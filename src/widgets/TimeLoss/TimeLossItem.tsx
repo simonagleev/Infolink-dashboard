@@ -34,7 +34,7 @@ interface ITimeLossItemProps {
     work: number;
     overTime: number;
     sickLeave: number;
-    offWork: number;
+    downTime: number;
 }
 
 
@@ -45,7 +45,7 @@ export const TimeLossItem = ({
     work,
     overTime,
     sickLeave,
-    offWork
+    downTime
 }: ITimeLossItemProps) => {
 
     const classes = useStyles();
@@ -66,7 +66,7 @@ export const TimeLossItem = ({
                         work: { color: '#7FB537', title: 'Работа', value: work },
                         overTime: { color: '#4FC0E8', title: 'Переработки', value: overTime },
                         sickLeave: { color: '#FE9B31', title: 'Больничные', value: sickLeave },
-                        offWork: { color: '#FA5F5A', title: 'Отсутствие', value: offWork }
+                        downTime: { color: '#FA5F5A', title: 'Отсутствие', value: downTime }
                     }} />
                 </Box>
             </Box>

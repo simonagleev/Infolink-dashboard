@@ -154,14 +154,14 @@
     },
     "revenue": {
         "income": {
-            "name": "In progress",
+            "name": "Operational Risk",
             "color": "#4FC0E8",
             "sum": "12249994",
             "percent": 20
         },
         "risks": {
             "color": "#7FB537",
-            "name": "Income",
+            "name": "Closed contracts",
             "sum": "73 499 965 $",
             "percent": 30
         },
@@ -179,11 +179,11 @@
         },
         "penalty": {
             "color": "#FA5F5A",
-            "name": "Penalty",
+            "name": "Compliance risk",
             "sum": "9 128 791 $",
             "percent": 10
         },
-        "header": "REVENUE CHART",
+        "header": "Risk chart",
         "dynamic": {
             "name": "Динамика за неделю",
             "icon": {
@@ -218,9 +218,9 @@
                 "work": 50,
                 "overTime": 10,
                 "sickLeave": 40,
-                "offWork": 10
+                "downTime": 10
             },
-            "age": 11,
+            "age": 35,
             "gender": "male",
             "phone": "+1 (928) 466-3062",
             "email": "annhardy@niquent.com",
@@ -234,7 +234,7 @@
                 "work": 50,
                 "overTime": 10,
                 "sickLeave": 40,
-                "offWork": 10
+                "downTime": 10
             },
             "id": "62441b95e506c32bab836971",
             "age": 30,
@@ -251,7 +251,7 @@
                 "work": 50,
                 "overTime": 10,
                 "sickLeave": 40,
-                "offWork": 10
+                "downTime": 10
             },
             "id": "62441b95f37325c19e82c104",
             "age": 35,
@@ -268,9 +268,14 @@
                 "work": 20,
                 "overTime": 20,
                 "sickLeave": 20,
-                "offWork": 20
+                "downTime": 20
             },
-            "id": "grtghetyhytdhfthydtyh"
+            "id": "62441b95187a13ce239ed74a",
+            "age": 41,
+            "gender": "female",
+            "phone": "+1 (869) 528-2130",
+            "email": "camillehutchinson@niquent.com",
+            "country": "Netherlands"
         },
         {
             "name": "Andrew Joahn",
@@ -280,7 +285,7 @@
                 "work": 10,
                 "overTime": 20,
                 "sickLeave": 20,
-                "offWork": 50
+                "downTime": 50
             },
             "id": "62441b9509fe1f479aaf73d2",
             "age": 32,
@@ -297,7 +302,7 @@
                 "work": 10,
                 "overTime": 50,
                 "sickLeave": 20,
-                "offWork": 20
+                "downTime": 20
             },
             "id": "62441b9588c5d75d2b2a1382",
             "age": 28,
@@ -314,7 +319,7 @@
                 "work": 10,
                 "overTime": 50,
                 "sickLeave": 20,
-                "offWork": 30
+                "downTime": 30
             },
             "id": "62441b9559ff446190012e58",
             "age": 24,
