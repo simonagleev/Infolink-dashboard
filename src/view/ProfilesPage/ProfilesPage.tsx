@@ -10,6 +10,9 @@ import {
   ListHandlerSortModel,
   useStaticPaginator,
 } from 'react-declarative';
+
+import { Avatar, Box } from '@mui/material';
+
 import { useRef, useState } from 'react';
 
 import CountryFlag from './components/CountryFlag';
@@ -43,6 +46,20 @@ const sortModel: ListHandlerSortModel<IPerson> = [
 
 const columns: IColumn<IPerson>[] = [
   {
+    type: ColumnType.Component,
+    headerName: 'Avatar',
+    width: '65px',
+    element: ({ avatar }) => (
+      <Box style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <Avatar
+          style={{ marginLeft: -10 }}
+          src={avatar}
+          alt={avatar}
+        />
+      </Box>
+    ),
+  },
+  {
     type: ColumnType.Text,
     field: 'name',
     headerName: 'Full name',
@@ -52,7 +69,7 @@ const columns: IColumn<IPerson>[] = [
     type: ColumnType.Text,
     field: 'occupation',
     headerName: 'Occupation',
-    width: 'max(15vw, 100px)',
+    width: 'max(10vw, 100px)',
   },
   {
     type: ColumnType.Component,
@@ -94,7 +111,7 @@ const columns: IColumn<IPerson>[] = [
     type: ColumnType.Component,
     field: 'countryFlag',
     headerName: 'Country',
-    width: '13vw',
+    width: '12vw',
     element: CountryFlag,
   },
   {
@@ -140,7 +157,24 @@ export const ProfilesPage = () => {
 
   const apiRef = useRef<IListApi>(null);
 
-  const handler = useStaticPaginator(ioc.mockService.homePage.timeConsumption);
+  const handler = useStaticPaginator(ioc.mockService.homePage.timeConsumption, {
+    filterHandler: (rows, filterData) => {
+      const { firstName, lastName } = filterData;
+      if (firstName) {
+        rows = rows.filter((row) => {
+          const rowFirstName = row.name.split(' ')[0];
+          return rowFirstName.includes(firstName);
+        });
+      }
+      if (lastName) {
+        rows = rows.filter((row) => {
+          const rowLastName = row.name.split(' ')[1];
+          return rowLastName.includes(lastName);
+        });
+      }
+      return rows;
+    }
+  });
 
   const [selectedRows, setSelectedRows] = useState<RowId[]>([]);
 

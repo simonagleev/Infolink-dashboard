@@ -13,6 +13,7 @@ import Typography from '@mui/material/Typography';
 import LinearProgress from '@mui/material/LinearProgress';
 
 import Restore from '@mui/icons-material/Restore';
+import Menu from "@mui/icons-material/Menu";
 
 import ioc from '../../lib/ioc';
 
@@ -46,11 +47,17 @@ const useStyles = makeStyles<Theme>((theme) => ({
     }
 }));
 
-export const Header = () => {
+interface IHeaderProps {
+    onMenuToggle?: () => void;
+}
+
+export const Header = ({
+    onMenuToggle,
+}: IHeaderProps) => {
     const classes = useStyles();
 
     const handleClick = () => {
-        ioc.alertService.notify('Просто красивка)');
+        ioc.alertService.notify('Chart update scheduled successfully');
     };
 
     return (
@@ -60,6 +67,17 @@ export const Header = () => {
                     <Grid className={classes.grid} container>
                         <Grid item>
                             <Box pl={1}>
+                                <IconButton
+                                    sx={{pl: 1}}
+                                    color="inherit"
+                                    onClick={onMenuToggle}
+                                >
+                                    <Menu />
+                                </IconButton>
+                            </Box>
+                        </Grid>
+                        <Grid item>
+                            <Box>
                                 <Typography variant="h6">
                                     InfoLink Dashboard
                                 </Typography>
