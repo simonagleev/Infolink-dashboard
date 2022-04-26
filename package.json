@@ -26,7 +26,7 @@
     "mobx": "^6.5.0",
     "mobx-react": "^7.3.0",
     "react": "17.0.2",
-    "react-declarative": "^1.8.42",
+    "react-declarative": "^1.8.46",
     "react-dom": "17.0.2",
     "rxjs": "^7.5.5",
     "use-debounce": "^7.0.1",

@@ -7,6 +7,7 @@ import {
   ListTyped,
   RowId,
   SelectionMode,
+  ListHandlerSortModel,
   useStaticPaginator,
 } from 'react-declarative';
 import { useRef, useState } from 'react';
@@ -30,6 +31,13 @@ const filters: TypedField[] = [
     type: FieldType.Text,
     name: 'lastName',
     title: 'Last name',
+  }
+];
+
+const sortModel: ListHandlerSortModel<IPerson> = [
+  {
+    field: 'KPI',
+    sort: 'asc',
   }
 ];
 
@@ -134,7 +142,7 @@ export const ProfilesPage = () => {
 
   const handler = useStaticPaginator(ioc.mockService.homePage.timeConsumption);
 
-  const [selectedRows, setSelectedRows] = useState<RowId[]>([])
+  const [selectedRows, setSelectedRows] = useState<RowId[]>([]);
 
   const handleRemove = async (person: IPerson) => {
     await ioc.mockService.remove(person);        
@@ -178,6 +186,7 @@ export const ProfilesPage = () => {
       onRowAction={handleRemove}
       onRowClick={handleClick}
       onAction={handleAction}
+      sortModel={sortModel}
     />
   );
 };
