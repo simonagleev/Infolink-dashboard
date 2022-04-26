@@ -210,15 +210,67 @@
     },
     "timeConsumption": [
         {
+            "id": "62441b9555be046d004f38df",
             "name": "Jeremy Brown",
             "occupation": "Mortgage consultant",
             "avatar": "https://mui.com/static/images/avatar/1.jpg",
             "timeValues": {
-                "work": 10,
+                "work": 50,
                 "overTime": 10,
+                "sickLeave": 40,
+                "offWork": 10
+            },
+            "age": 11,
+            "gender": "male",
+            "phone": "+1 (928) 466-3062",
+            "email": "annhardy@niquent.com",
+            "country": "Congo"
+        },
+        {
+            "name": "Tito Bronson",
+            "occupation": "Internal auditor",
+            "avatar": "https://mui.com/static/images/avatar/6.jpg",
+            "timeValues": {
+                "work": 50,
+                "overTime": 10,
+                "sickLeave": 40,
+                "offWork": 10
+            },
+            "id": "62441b95e506c32bab836971",
+            "age": 30,
+            "gender": "male",
+            "phone": "+1 (884) 481-2205",
+            "email": "alvaradohickman@niquent.com",
+            "country": "Germany"
+        },
+        {
+            "name": "Mirka Bartos",
+            "occupation": "Loan officer",
+            "avatar": "https://mui.com/static/images/avatar/7.jpg",
+            "timeValues": {
+                "work": 50,
+                "overTime": 10,
+                "sickLeave": 40,
+                "offWork": 10
+            },
+            "id": "62441b95f37325c19e82c104",
+            "age": 35,
+            "gender": "female",
+            "phone": "+1 (841) 475-2771",
+            "email": "carterhurley@niquent.com",
+            "country": "Poland"
+        },
+        {
+            "name": "Sara Hamilton",
+            "occupation": "Financial advisor",
+            "avatar": "https://mui.com/static/images/avatar/4.jpg",
+            "timeValues": {
+                "work": 20,
+                "overTime": 20,
                 "sickLeave": 20,
-                "offWork": 60
-            }
+                "offWork": 20
+            },
+            "id": "grtghetyhytdhfthydtyh"
         },
         {
             "name": "Andrew Joahn",
@@ -229,65 +281,50 @@
                 "overTime": 20,
                 "sickLeave": 20,
                 "offWork": 50
-            }
-        },
-        {
-            "name": "Ann Juhnson",
-            "occupation": "Secretary",
-            "avatar": "https://mui.com/static/images/avatar/3.jpg",
-            "timeValues": {
-                "work": 40,
-                "overTime": 5,
-                "sickLeave": 35,
-                "offWork": 10
-            }
-        },
-        {
-            "name": "Sara Hamilton",
-            "occupation": "Financial advisor",
-            "avatar": "https://mui.com/static/images/avatar/4.jpg",
-            "timeValues": {
-                "work": 40,
-                "overTime": 20,
-                "sickLeave": 20,
-                "offWork": 20
-            }
+            },
+            "id": "62441b9509fe1f479aaf73d2",
+            "age": 32,
+            "gender": "male",
+            "phone": "+1 (940) 527-3001",
+            "email": "frankiedaugherty@niquent.com",
+            "country": "Belgium"
         },
         {
             "name": "Jeremy Gog",
             "occupation": "Financial analyst",
             "avatar": "https://mui.com/static/images/avatar/5.jpg",
             "timeValues": {
-                "work": 60,
-                "overTime": 30,
-                "sickLeave": 10,
-                "offWork": 0
-            }
-        },
-        {
-            "name": "Tito Bronson",
-            "occupation": "Internal auditor",
-            "avatar": "https://mui.com/static/images/avatar/6.jpg",
-            "timeValues": {
-                "work": 38,
-                "overTime": 12,
-                "sickLeave": 30,
-                "offWork": 20
-            }
-        },
-        {
-            "name": "Mirka Bartos",
-            "occupation": "Loan officer",
-            "avatar": "https://mui.com/static/images/avatar/7.jpg",
-            "timeValues": {
-                "work": 50,
-                "overTime": 10,
+                "work": 10,
+                "overTime": 50,
                 "sickLeave": 20,
                 "offWork": 20
-            }
+            },
+            "id": "62441b9588c5d75d2b2a1382",
+            "age": 28,
+            "gender": "male",
+            "phone": "+1 (949) 512-2789",
+            "email": "jannawilkinson@niquent.com",
+            "country": "Gambia"
+        },
+        {
+            "name": "Ann Juhnson",
+            "occupation": "Secretary",
+            "avatar": "https://mui.com/static/images/avatar/3.jpg",
+            "timeValues": {
+                "work": 10,
+                "overTime": 50,
+                "sickLeave": 20,
+                "offWork": 30
+            },
+            "id": "62441b9559ff446190012e58",
+            "age": 24,
+            "gender": "female",
+            "phone": "+1 (876) 433-2631",
+            "email": "lilianengland@niquent.com",
+            "country": "Australia"
         }
     ],
-    "dynamicChartItems":[
+    "dynamicChartItems": [
         {
             "code": "fact",
             "color": "#656D78",
