@@ -163,13 +163,13 @@ export const ProfilesPage = () => {
       if (firstName) {
         rows = rows.filter((row) => {
           const rowFirstName = row.name.split(' ')[0];
-          return rowFirstName.includes(firstName);
+          return rowFirstName.toLowerCase().includes(firstName.toLowerCase());
         });
       }
       if (lastName) {
         rows = rows.filter((row) => {
           const rowLastName = row.name.split(' ')[1];
-          return rowLastName.includes(lastName);
+          return rowLastName.toLowerCase().includes(lastName.toLowerCase());
         });
       }
       return rows;
