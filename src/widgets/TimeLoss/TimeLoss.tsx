@@ -66,7 +66,7 @@ export const TimeLoss = () => {
                         alignItems: 'center'
                     }}
                 >
-                    <div style={{background: '#4FC0E8', width: 15, height: 15, borderRadius: '3px', marginRight: '5px'}}></div>
+                    <div style={{background: '#7FB537', width: 15, height: 15, borderRadius: '3px', marginRight: '5px'}}></div>
                     <span>Work</span>
                 </Box>
                 <Box
@@ -75,7 +75,7 @@ export const TimeLoss = () => {
                         alignItems: 'center'
                     }}
                 >
-                    <div style={{background: '#7FB537', width: 15, height: 15, borderRadius: '3px', marginRight: '5px'}}></div>
+                    <div style={{background: '#4FC0E8', width: 15, height: 15, borderRadius: '3px', marginRight: '5px'}}></div>
                     <span>Overtime work</span>
                 </Box>
                 <Box
