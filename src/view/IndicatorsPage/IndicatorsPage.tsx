@@ -25,7 +25,7 @@ const fields: TypedField[] = [
       type: FieldType.Component,
       element: () => (
         <IndicatorCard
-          color="blue"
+          color="#4FC0E8"
           label='New chats'
           value='58'
           icon={MarkChatUnreadIcon}
@@ -44,7 +44,7 @@ const fields: TypedField[] = [
       type: FieldType.Component,
       element: () => (
         <IndicatorCard
-          color="OrangeRed"
+          color="#fc6e51"
           label='New sales'
           value='15'
           icon={PointOfSaleIcon }
@@ -63,7 +63,7 @@ const fields: TypedField[] = [
       type: FieldType.Component,
       element: () => (
         <IndicatorCard
-          color="orange"
+          color="#7FB537"
           label='Hours worked'
           value='37 of 40'
           icon={WorkIcon}
@@ -82,7 +82,7 @@ const fields: TypedField[] = [
       type: FieldType.Component,
       element: () => (
         <IndicatorCard
-          color="DodgerBlue"
+          color="#FE9B31"
           label='Late arrivals'
           value='5'
           icon={AssignmentLateIcon}
@@ -101,7 +101,7 @@ const fields: TypedField[] = [
       type: FieldType.Component,
       element: () => (
         <IndicatorCard
-          color="green"
+          color="#ffce54"
           label='Absence hours'
           value='1'
           icon={DirectionsRunIcon}
@@ -120,7 +120,7 @@ const fields: TypedField[] = [
       type: FieldType.Component,
       element: () => (
         <IndicatorCard
-          color="Indigo"
+          color="#967adc"
           label='Overtime'
           value='1'
           icon={AccessTimeIcon}
@@ -139,7 +139,7 @@ const fields: TypedField[] = [
       type: FieldType.Component,
       element: () => (
         <IndicatorCard
-          color="#d70040"
+          color="#da4453"
           label='Downtime'
           value='0'
           icon={HighlightOffIcon}
