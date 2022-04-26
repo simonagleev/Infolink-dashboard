@@ -63,8 +63,8 @@ export const TimeLossItem = ({
                 </Box>
                 <Box flex="1">
                     <ColorProgressBar data={{
-                        work: { color: '#4FC0E8', title: 'Работа', value: work },
-                        overTime: { color: '#7FB537', title: 'Переработки', value: overTime },
+                        work: { color: '#7FB537', title: 'Работа', value: work },
+                        overTime: { color: '#4FC0E8', title: 'Переработки', value: overTime },
                         sickLeave: { color: '#FE9B31', title: 'Больничные', value: sickLeave },
                         offWork: { color: '#FA5F5A', title: 'Отсутствие', value: offWork }
                     }} />

@@ -90,7 +90,7 @@ export const Hero = ({
 }: IHeroProps) => {
   const classes = useStyles();
   const contentRef = useRef<HTMLDivElement>(null);
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState(1);
 
   const [indexD] = useDebounce(index, 100);
 

@@ -154,33 +154,33 @@
     },
     "revenue": {
         "income": {
-            "name": "Income",
+            "name": "In progress",
             "color": "#4FC0E8",
             "sum": "12249994",
-            "percent": 15
+            "percent": 20
         },
         "risks": {
             "color": "#7FB537",
-            "name": "Risk",
+            "name": "Income",
             "sum": "73 499 965 $",
-            "percent": 20
+            "percent": 30
         },
         "inwork": {
             "color": "#967BDC",
-            "name": "In work",
+            "name": "Overbudget risk",
             "sum": "146999930",
             "percent": 15
         },
         "riskShortfall": {
             "color": "#FE9B31",
             "name": "Shortfall risk",
-            "sum": "61 249 971 $",
+            "sum": "31 249 971 $",
             "percent": 25
         },
         "penalty": {
             "color": "#FA5F5A",
             "name": "Penalty",
-            "sum": "48 128 791 $",
+            "sum": "9 128 791 $",
             "percent": 10
         },
         "header": "REVENUE CHART",
@@ -191,7 +191,7 @@
             },
             "sum": "2 000 500 $"
         },
-        "fullSum": "24 499 988 $",
+        "fullSum": "91 499 988 $",
         "overflowRisk": {
             "name": "Риск выхода за рамки бюджета\\nна  % - на р",
             "icon": {
@@ -204,8 +204,8 @@
             "color": "#FFCA28",
             "name": "Penalty risk",
             "comment": "(обращение в суд)",
-            "sum": "24 499 988 $",
-            "percent": 10
+            "sum": "14 499 988 $",
+            "percent": 15
         }
     },
     "timeConsumption": [
