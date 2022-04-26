@@ -38,7 +38,7 @@ const columns: IColumn<IPerson>[] = [
     type: ColumnType.Text,
     field: 'name',
     headerName: 'Full name',
-    width: 'max(15vw, 100px)',
+    width: 'max(10vw, 80px)',
   },
   {
     type: ColumnType.Text,
@@ -47,10 +47,22 @@ const columns: IColumn<IPerson>[] = [
     width: 'max(15vw, 100px)',
   },
   {
-    type: ColumnType.Text,
+    type: ColumnType.Component,
     field: 'KPI',
     headerName: 'KPI index',
-    width: 'max(8vw, 75px)',
+    width: 'max(8vw, 125px)',
+    element: ({ KPI }) => (
+      <span style={{
+        color: KPI < 50 ? 'red' : KPI < 70 ? 'orange' : 'green',
+        display: 'flex',
+        alignItems: 'center'
+      }}>
+        <span style={{ fontWeight: '900', marginRight: '1em' }}>
+          {`${KPI}%`}
+        </span>
+        ({KPI < 50 ? 'Need review' : KPI < 70 ? 'Warning' : 'Normal'})
+      </span>
+    )
   },
   {
     type: ColumnType.Text,
