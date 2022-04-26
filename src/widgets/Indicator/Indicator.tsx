@@ -21,6 +21,7 @@ import ArrowDown from "@mui/icons-material/ArrowDownward";
 import ArrowUp from "@mui/icons-material/ArrowUpward";
 import Remove from "@mui/icons-material/RemoveCircleOutline";
 import RemoveCircleOutlineIcon from "@mui/icons-material/RemoveCircleOutline";
+import ioc from "../../lib/ioc";
 
 const useStyles = makeStyles({
   root: {
@@ -135,8 +136,14 @@ export const Indicator = ({
     }
   };
 
+  const hadleClick = () => {
+    if (name === "Staff") {
+      ioc.routerService.push('/profiles-list')
+    }
+  }
+
   return (
-    <div className={classNames(classes.root, className)} style={style}>
+    <div className={classNames(classes.root, className)} style={style} onClick={hadleClick}>
       <Paper
         className={classes.root}
         style={{

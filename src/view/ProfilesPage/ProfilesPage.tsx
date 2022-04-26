@@ -15,10 +15,10 @@ import CountryFlag from './components/CountryFlag';
 import IColumn from 'react-declarative/model/IColumn';
 import IPerson from '../../model/IPerson';
 import TypedField from 'react-declarative/model/TypedField';
-import ioc from '../../lib/ioc';
-import { observer } from 'mobx-react';
-import { WorkerAvatar } from './components/Avatar';
 
+import { observer } from 'mobx-react';
+
+import ioc from '../../lib/ioc';
 
 const filters: TypedField[] = [
   {
@@ -36,38 +36,27 @@ const filters: TypedField[] = [
 const columns: IColumn<IPerson>[] = [
   {
     type: ColumnType.Text,
-    field: 'id',
-    headerName: 'ID',
-    width: 'max(15vw, 150px)',
-  },
-  // {
-  //   type: ColumnType.Component,
-  //   field: 'heh',
-  //   headerName: 'Photo',
-  //   width: 'max(15vw, 100px)',
-  //   element: () => {
-  //     <WorkerAvatar
-  //       avatar='###'
-  //     />
-  //   } 
-  // },
-  {
-    type: ColumnType.Text,
     field: 'name',
-    headerName: 'Name',
+    headerName: 'Full name',
     width: 'max(15vw, 100px)',
   },
   {
     type: ColumnType.Text,
     field: 'occupation',
     headerName: 'Occupation',
+    width: 'max(15vw, 100px)',
+  },
+  {
+    type: ColumnType.Text,
+    field: 'KPI',
+    headerName: 'KPI index',
     width: 'max(8vw, 75px)',
   },
   {
     type: ColumnType.Text,
     field: 'gender',
     headerName: 'Gender',
-    width: 'max(8vw, 75px)',
+    width: 'max(8vw, 65px)',
   },
   {
     type: ColumnType.Text,
@@ -136,7 +125,7 @@ export const ProfilesPage = () => {
   const [selectedRows, setSelectedRows] = useState<RowId[]>([])
 
   const handleRemove = async (person: IPerson) => {
-    //await ioc.mockService.remove(person);        //REMOVE from personservice
+    await ioc.mockService.remove(person);        
     apiRef.current?.reload();
   };
 
@@ -144,7 +133,7 @@ export const ProfilesPage = () => {
     if (name === 'create'){
       ioc.routerService.push(`/profiles-list/create`);
     } else if (name === 'delete') {
-      //ioc.mockService.delete(selectedRows);
+      ioc.mockService.delete(selectedRows);
       apiRef.current?.reload();
       setSelectedRows([]);
       ioc.alertService.notify('Deleted')

@@ -16,5 +16,6 @@ export interface IPerson {
     phone: string;
     avatar: string;
     timeValues: ITimeValues;
+    KPI: string;
 }
 export default IPerson;

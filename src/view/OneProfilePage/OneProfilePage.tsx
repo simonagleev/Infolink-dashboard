@@ -5,6 +5,8 @@ import ioc from "../../lib/ioc";
 import { observer } from "mobx-react";
 import { useState } from "react";
 
+const MAIN_CONTENT = 'dashboard-app__mainContent';
+
 const fields: TypedField[] = [
   {
     type: FieldType.Group,
@@ -15,21 +17,34 @@ const fields: TypedField[] = [
         columns: "2",
         phoneColumns: '12',
         tabletColumns: '2',
+        style: {
+          overflow: 'hidden',
+        },
         fields: [
           {
             type: FieldType.Component,
-            element: () => (
-              <AutoSizer keepFlow>
+            element: ({
+              avatar
+            }) => (
+              <AutoSizer keepFlow payload={avatar}>
                 {({ width }) => (
-                  <div
-                    style={{
-                      background: '#0003',
-                      height: width,
-                      width,
-                    }}
-                  />
+                  <AutoSizer target={document.body} selector={`.${MAIN_CONTENT}`} keepFlow payload={avatar}>
+                    {({ height }) => (
+                      <img
+                        style={{
+                          background: '#0003',
+                          height: height,
+                          width: width - 10,
+                          objectFit: 'contain',
+                        }}
+                        src={avatar}
+                        loading="lazy"
+                      />
+                    )}
+                  </AutoSizer>
                 )}
-              </AutoSizer>)
+              </AutoSizer>
+            )
           },
           {
             type: FieldType.Rating,
@@ -48,69 +63,74 @@ const fields: TypedField[] = [
         fields: [
           {
             type: FieldType.Group,
-            fieldBottomMargin: "0",
-            columns: "2",
+            className: MAIN_CONTENT,
             fields: [
               {
-                type: FieldType.Switch,
+                type: FieldType.Div,
+                style: {
+                  display: 'grid',
+                  gridTemplateColumns: 'auto 1fr 1fr',
+                },
+                fields: [
+                  {
+                    type: FieldType.Checkbox,
+                    fieldBottomMargin: "0",
+                    title: "Enabled",
+                  },
+                  {
+                    type: FieldType.Text,
+                    outlined: false,
+                    title: "Identificator",
+                    name: "id",
+                  },
+                  {
+                    type: FieldType.Group,
+                    fields: [
+                      {
+                        name: "id",
+                        type: FieldType.Text,
+                        outlined: false,
+                        title: "Outer ID",
+                      },
+                    ]
+                  },
+
+                ],
+              },
+              {
+                name: 'name',
+                type: FieldType.Text,
+                title: 'Full name',
+                description: 'Required',
+              },
+              {
+                name: 'occupation',
+                type: FieldType.Text,
+                title: 'Occupation',
+                description: 'Required',
+              },
+              {
+                name: 'KPI',
+                type: FieldType.Text,
+                title: 'KPI index',
+              },
+              {
+                type: FieldType.Combo,
+                title: "Gender",
+                placeholder: "Choose",
+                name: "gender",
+                itemList: [
+                  "Male",
+                  "Female",
+                  "Other"
+                ]
               },
             ]
           },
           {
             type: FieldType.Group,
             fieldBottomMargin: "0",
-            columns: "5",
-            fields: [
-              {
-                type: FieldType.Text,
-                outlined: false,
-                title: "Identificator",
-                name: "id",
-
-              }
-            ]
-          },
-          {
-            type: FieldType.Group,
-            fieldBottomMargin: "0",
-            columns: "5",
-            fields: [
-              {
-                name: "id",
-                type: FieldType.Text,
-                outlined: false,
-                title: "Outer ID",
-              },
-            ]
-          },
-          {
-            name: 'firstName',
-            type: FieldType.Text,
-            title: 'First name',
-            description: 'Required',
-          },
-          {
-            name: 'lastName',
-            type: FieldType.Text,
-            title: 'Last name',
-            description: 'Required',
-          },
-
-          {
-            type: FieldType.Combo,
-            title: "Gender",
-            placeholder: "Choose",
-            name: "gender",
-            itemList: [
-              "Male",
-              "Female",
-              "Other"
-            ]
-          },
-          {
-            type: FieldType.Group,
-            fieldBottomMargin: "0",
-            columns: "5",
+            columns: "12",
             fields: [
               {
                 type: FieldType.Line,
@@ -133,17 +153,6 @@ const fields: TypedField[] = [
               },
             ]
           },
-          {
-            type: FieldType.Group,
-            fieldBottomMargin: "0",
-            columns: "5",
-            fields: [
-              {
-                type: FieldType.Line,
-                title: "Chatting History"
-              },
-            ]
-          }
         ]
       }
     ]
@@ -167,11 +176,11 @@ export const OneProfilePage = ({
       setData(data);
     }
   };
-  
+
   const handleSave = async () => {
     if (data) {
       data.id = id;
-      // await ioc.personService.save(data);
+      await ioc.mockService.save(data);
       ioc.routerService.push(`/profiles-list/${data.id}`);
       ioc.alertService.notify('Saved');
     } else {
@@ -180,15 +189,11 @@ export const OneProfilePage = ({
   }
 
   const handleBack = () => {
-    ioc.routerService.push(`/`);
+    ioc.routerService.push(`/profiles-list`);
   };
 
-  // const handler = () => ioc.personService.one(id);
-  
-  const test = () => {
-    console.log('rerere ' + data)
-  }
-  
+  const handler = () => ioc.mockService.one(id);
+
   return (
     <>
       <Breadcrumbs
@@ -200,11 +205,10 @@ export const OneProfilePage = ({
       />
       <One
         fields={fields}
-        // handler={handler}
-        // fallback={ioc.personService.fallback}
+        handler={handler}
+        // fallback={ioc.mockService.fallback}
         onChange={handleChange}
       />
-      <button onClick={test}>test</button>
     </>
   );
 };
