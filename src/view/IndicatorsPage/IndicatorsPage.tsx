@@ -46,7 +46,7 @@ const fields: TypedField[] = [
         <IndicatorCard
           color="#fc6e51"
           label='New sales'
-          value='15'
+          value='11'
           icon={PointOfSaleIcon }
         />
       ),
@@ -65,7 +65,7 @@ const fields: TypedField[] = [
         <IndicatorCard
           color="#7FB537"
           label='Hours worked'
-          value='37 of 40'
+          value='32 of 40'
           icon={WorkIcon}
         />
       ),
@@ -84,7 +84,7 @@ const fields: TypedField[] = [
         <IndicatorCard
           color="#FE9B31"
           label='Late arrivals'
-          value='5'
+          value='7'
           icon={AssignmentLateIcon}
         />
       ),
@@ -103,7 +103,7 @@ const fields: TypedField[] = [
         <IndicatorCard
           color="#ffce54"
           label='Absence hours'
-          value='1'
+          value='8'
           icon={DirectionsRunIcon}
         />
       ),
@@ -122,7 +122,7 @@ const fields: TypedField[] = [
         <IndicatorCard
           color="#967adc"
           label='Overtime'
-          value='1'
+          value='5'
           icon={AccessTimeIcon}
         />
       ),
@@ -141,7 +141,7 @@ const fields: TypedField[] = [
         <IndicatorCard
           color="#da4453"
           label='Downtime'
-          value='0'
+          value='10'
           icon={HighlightOffIcon}
         />
       ),

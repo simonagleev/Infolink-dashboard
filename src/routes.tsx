@@ -57,7 +57,7 @@ export const routes: ISwitchItem[] = [
     element: OneProfilePage,
   },
   {
-    path: '/indicators',
+    path: '/indicators/:id',
     element: IndicatorsPage,
   },
   {

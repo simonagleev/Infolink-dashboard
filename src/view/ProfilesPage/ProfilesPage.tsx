@@ -24,6 +24,10 @@ import { observer } from 'mobx-react';
 
 import ioc from '../../lib/ioc';
 
+const handleRowAction2 = () => {
+  ioc.routerService.push(`/indicators/}`)
+}
+
 const filters: TypedField[] = [
   {
     type: FieldType.Text,
@@ -77,7 +81,13 @@ const columns: IColumn<IPerson>[] = [
     headerName: 'KPI index',
     width: 'max(8vw, 125px)',
     element: ({ KPI }) => (
-      <span style={{
+      <div onClick={handleRowAction2} style={{
+        display: 'flex',
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+        cursor: 'pointer',
+      }}> 
+        <span style={{
         color: KPI < 50 ? '#FA5F5A' : KPI < 70 ? '#FE9B31' : '#7FB537',
         display: 'flex',
         alignItems: 'center'
@@ -85,8 +95,10 @@ const columns: IColumn<IPerson>[] = [
         <span style={{ fontWeight: '900', marginRight: '1em' }}>
           {`${KPI}%`}
         </span>
-        ({KPI < 50 ? 'Need review' : KPI < 70 ? 'Warning' : 'Normal'})
-      </span>
+          ({KPI < 50 ? 'Review needed' : KPI < 70 ? 'Warning' : 'Normal'})
+        </span>
+      </div>
+      
     )
   },
   {
@@ -143,6 +155,10 @@ const rowActions = [
     label: 'Remove this person',
     action: 'remove-action',
   },
+  {
+    label: 'Show perfomace indicators',
+    action: 'indicators-action',
+  },
 ];
 
 const heightRequest = () => window.innerHeight - 100;
@@ -183,6 +199,10 @@ export const ProfilesPage = () => {
     apiRef.current?.reload();
   };
 
+  const handleRowAction = (person: IPerson) => {
+    ioc.routerService.push(`/indicators/${person.id}`)
+  }
+
   const handleAction = (name: string) => {
     if (name === 'create'){
       ioc.routerService.push(`/profiles-list/create`);
@@ -195,7 +215,10 @@ export const ProfilesPage = () => {
   }
 
   const handleClick = (person: IPerson) => {
-    ioc.routerService.push(`/profiles-list/${person.id}`);      //переход пo конкретному ID
+      ioc.routerService.push(`/profiles-list/${person.id}`);
+      event?.preventDefault();
+      event?.stopPropagation();
+      event?.stopImmediatePropagation();
   };
 
   const handleSelectedRows = (rows: RowId[]) => {
@@ -217,7 +240,7 @@ export const ProfilesPage = () => {
       columns={columns}
       handler={handler}
       onSelectedRows={handleSelectedRows}
-      onRowAction={handleRemove}
+      onRowAction={handleRowAction}
       onRowClick={handleClick}
       onAction={handleAction}
       sortModel={sortModel}
