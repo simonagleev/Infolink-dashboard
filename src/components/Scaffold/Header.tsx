@@ -59,7 +59,9 @@ export const Header = ({
     const handleClick = () => {
         ioc.alertService.notify('Chart update scheduled successfully');
     };
-
+    const homeHandler = () => {
+        ioc.routerService.push('/')
+    }
     return (
         <>
             <AppBar className={classes.appBar}>
@@ -77,7 +79,7 @@ export const Header = ({
                             </Box>
                         </Grid>
                         <Grid item>
-                            <Box>
+                            <Box  onClick={homeHandler}>
                                 <Typography variant="h6">
                                     InfoLink Dashboard
                                 </Typography>
