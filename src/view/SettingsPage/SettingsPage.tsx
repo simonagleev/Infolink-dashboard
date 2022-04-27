@@ -38,24 +38,56 @@ const norifyFields: TypedField[] = [
   {
       type: FieldType.Expansion,
       fieldRightMargin: '0',
-      title: 'Moderations',
+      title: 'Messengers',
       fields: [
-          {
+            {
               type: FieldType.Switch,
-              name: 'notify.moderation',
+              name: 'messengers.whatsApp',
               fieldRightMargin: '0',
-              title: 'Moderations',
+              title: 'WhatsApp',
               fieldBottomMargin: '0',
-          },
-          {
-              type: FieldType.Typography,
-              typoVariant: 'subtitle2',
-              placeholder: 'Toggle moderation notifications',
-              style: {
-                  opacity: 0.5,
-              },
-              fieldBottomMargin: '0',
-          },
+            },
+            {
+                type: FieldType.Typography,
+                typoVariant: 'subtitle2',
+                placeholder: 'Toggle notifications via WhatsApp',
+                style: {
+                    opacity: 0.5,
+                },
+                fieldBottomMargin: '0',
+            },
+            {
+                type: FieldType.Switch,
+                name: 'messengers.telegram',
+                fieldRightMargin: '0',
+                title: 'Telegram',
+                fieldBottomMargin: '0',
+            },
+            {
+                type: FieldType.Typography,
+                typoVariant: 'subtitle2',
+                placeholder: 'Toggle notifications via Telegram',
+                style: {
+                    opacity: 0.5,
+                },
+                fieldBottomMargin: '0',
+            },
+            {
+                type: FieldType.Switch,
+                name: 'messengers.facebook',
+                fieldRightMargin: '0',
+                title: 'Facebook',
+                fieldBottomMargin: '0',
+            },
+            {
+                type: FieldType.Typography,
+                typoVariant: 'subtitle2',
+                placeholder: 'Toggle notifications via Facebook',
+                style: {
+                    opacity: 0.5,
+                },
+                fieldBottomMargin: '0',
+            },
       ],
   },
   {

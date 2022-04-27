@@ -37,9 +37,6 @@ export const AvatarPicker = () => {
                     alt="Remy Sharp" 
                     src="/assets/settingsProfilePic.png"
                     className={classes.avatar}
-                    // imgProps={{
-                    //     crossOrigin: 'anonymous'
-                    // }}
                 />
             </Box>
             <div className={classes.content}>
