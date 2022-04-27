@@ -39,6 +39,7 @@ const notifyFields: TypedField[] = [
         type: FieldType.Expansion,
         fieldRightMargin: '0',
         title: 'Messengers',
+        fieldBottomMargin: '2',
         fields: [
             {
                 type: FieldType.Switch,
@@ -54,7 +55,7 @@ const notifyFields: TypedField[] = [
                 style: {
                     opacity: 0.5,
                 },
-                fieldBottomMargin: '0',
+                fieldBottomMargin: '1',
             },
             {
                 type: FieldType.Switch,
@@ -70,7 +71,7 @@ const notifyFields: TypedField[] = [
                 style: {
                     opacity: 0.5,
                 },
-                fieldBottomMargin: '0',
+                fieldBottomMargin: '1',
             },
             {
                 type: FieldType.Switch,
@@ -86,7 +87,7 @@ const notifyFields: TypedField[] = [
                 style: {
                     opacity: 0.5,
                 },
-                fieldBottomMargin: '0',
+                fieldBottomMargin: '1',
             },
         ],
     },
@@ -94,6 +95,7 @@ const notifyFields: TypedField[] = [
         type: FieldType.Expansion,
         fieldRightMargin: '0',
         title: 'Problems',
+        fieldBottomMargin: '2',
         fields: [
             {
                 type: FieldType.Switch,
@@ -109,7 +111,7 @@ const notifyFields: TypedField[] = [
                 style: {
                     opacity: 0.5,
                 },
-                fieldBottomMargin: '0',
+                fieldBottomMargin: '1',
             },
             {
                 type: FieldType.Switch,
@@ -125,7 +127,7 @@ const notifyFields: TypedField[] = [
                 style: {
                     opacity: 0.5,
                 },
-                fieldBottomMargin: '0',
+                fieldBottomMargin: '1',
             },
             {
                 type: FieldType.Switch,
@@ -141,7 +143,7 @@ const notifyFields: TypedField[] = [
                 style: {
                     opacity: 0.5,
                 },
-                fieldBottomMargin: '0',
+                fieldBottomMargin: '1',
             },
         ],
     },
@@ -149,6 +151,7 @@ const notifyFields: TypedField[] = [
         type: FieldType.Expansion,
         fieldRightMargin: '0',
         title: 'Payments',
+        fieldBottomMargin: '2',
         fields: [
             {
                 type: FieldType.Switch,
@@ -165,7 +168,7 @@ const notifyFields: TypedField[] = [
                 style: {
                     opacity: 0.5,
                 },
-                fieldBottomMargin: '0',
+                fieldBottomMargin: '1',
             },
         ],
     },
@@ -173,6 +176,7 @@ const notifyFields: TypedField[] = [
         type: FieldType.Expansion,
         fieldRightMargin: '0',
         title: 'Withdraws',
+        fieldBottomMargin: '2',
         fields: [
             {
                 type: FieldType.Switch,
@@ -189,7 +193,7 @@ const notifyFields: TypedField[] = [
                 style: {
                     opacity: 0.5,
                 },
-                fieldBottomMargin: '0',
+                fieldBottomMargin: '1',
             },
         ],
     },
@@ -228,7 +232,6 @@ const dangerFields: TypedField[] = [
 const fields: TypedField[] = [
     ...personalFields,
     ...notifyFields,
-    ...languageFields,
     ...dangerFields,
 ];
 
