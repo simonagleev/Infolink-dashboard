@@ -28,6 +28,14 @@ const personalFields: TypedField[] = [
         title: 'Email (Readonly)',
         description: 'An email address linked to this account',
     },
+    {
+        type: FieldType.Text,
+        fieldRightMargin: '0',
+        name: 'global.phone',
+        readonly: true,
+        title: 'Phone (Readonly)',
+        description: 'A phone number linked to this account',
+    },
 ];
 
 const notifyFields: TypedField[] = [
