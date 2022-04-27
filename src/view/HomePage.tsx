@@ -33,8 +33,8 @@ const fields: TypedField[] = [
                                 desktopRight: '10px',
                                 phoneBottom: '10px',
                                 tabletBottom: '10px',
-                                phoneMinHeight: '225px',
-                                tabletMinHeight: '225px',
+                                minHeight: '225px',
+                                maxHeight: '225px',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
@@ -53,8 +53,8 @@ const fields: TypedField[] = [
                                 desktopRight: '10px',
                                 phoneBottom: '10px',
                                 tabletBottom: '10px',
-                                phoneMinHeight: '225px',
-                                tabletMinHeight: '225px',
+                                minHeight: '225px',
+                                maxHeight: '225px',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
@@ -73,8 +73,9 @@ const fields: TypedField[] = [
                                 desktopRight: '10px',
                                 phoneBottom: '10px',
                                 tabletBottom: '10px',
-                                phoneMinHeight: '225px',
-                                tabletMinHeight: '225px',
+                                
+                                minHeight: '225px',
+                                maxHeight: '225px',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
@@ -93,8 +94,9 @@ const fields: TypedField[] = [
                                 desktopRight: '10px',
                                 phoneBottom: '10px',
                                 tabletBottom: '10px',
-                                phoneMinHeight: '225px',
-                                tabletMinHeight: '225px',
+                                
+                                minHeight: '225px',
+                                maxHeight: '225px',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
@@ -113,8 +115,9 @@ const fields: TypedField[] = [
                                 desktopRight: '10px',
                                 phoneBottom: '10px',
                                 tabletBottom: '10px',
-                                phoneMinHeight: '225px',
-                                tabletMinHeight: '225px',
+                                
+                                minHeight: '225px',
+                                maxHeight: '225px',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
@@ -133,8 +136,9 @@ const fields: TypedField[] = [
                                 desktopRight: '10px',
                                 phoneBottom: '10px',
                                 tabletBottom: '10px',
-                                phoneMinHeight: '225px',
-                                tabletMinHeight: '225px',
+                                
+                                minHeight: '225px',
+                                maxHeight: '225px',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
@@ -150,8 +154,9 @@ const fields: TypedField[] = [
                                 columns: '1',
                                 phoneColumns: '7',
                                 tabletColumns: '7',
-                                phoneMinHeight: '225px',
-                                tabletMinHeight: '225px',
+                                
+                                minHeight: '225px',
+                                maxHeight: '225px',
                                 child: {
                                     type: FieldType.Component,
                                     element: () => (
@@ -173,6 +178,8 @@ const fields: TypedField[] = [
                         bottom: '10px',
                         phoneBottom: '10px',
                         tabletBottom: '10px',
+                        minHeight: '500px',
+                        maxHeight: '500px',
                         child: {
                             type: FieldType.Component,
                             element: () => (
@@ -194,6 +201,8 @@ const fields: TypedField[] = [
                         desktopRight: '10px',
                         phoneMinHeight: '500px',
                         tabletMinHeight: '500px',
+                        minHeight: '500px',
+                        maxHeight: '500px',
                         child: {
                             type: FieldType.Component,
                             element: () => (
@@ -213,6 +222,8 @@ const fields: TypedField[] = [
                         bottom: '10px',
                         phoneBottom: '10px',
                         tabletBottom: '10px',
+                        minHeight: '500px',
+                        maxHeight: '500px',
                         child: {
                             type: FieldType.Component,
                             element: () => (
@@ -231,6 +242,8 @@ const fields: TypedField[] = [
                         phoneBottom: '10px',
                         tabletBottom: '10px',
                         desktopRight: '10px',
+                        minHeight: '400px',
+                        maxHeight: '400px',
                         child: {
                             type: FieldType.Component,
                             element: () => (
@@ -246,8 +259,8 @@ const fields: TypedField[] = [
                         phoneColumns: '12',
                         phoneBottom: '10px',
                         tabletBottom: '10px',
-                        phoneMinHeight: '300px',
-                        tabletMinHeight: '300px',
+                        minHeight: '400px',
+                        maxHeight: '400px',
                         child: {
                             type: FieldType.Component,
                             element: () => (

@@ -157,31 +157,31 @@
             "name": "Operational Risk",
             "color": "#4FC0E8",
             "sum": "12249994",
-            "percent": 20
+            "percent": 15
         },
         "risks": {
             "color": "#7FB537",
             "name": "Closed contracts",
             "sum": "73 499 965 $",
-            "percent": 30
+            "percent": 20
         },
         "inwork": {
             "color": "#967BDC",
             "name": "Overbudget risk",
             "sum": "146999930",
-            "percent": 15
+            "percent": 10
         },
         "riskShortfall": {
             "color": "#FE9B31",
             "name": "Shortfall risk",
             "sum": "31 249 971 $",
-            "percent": 25
+            "percent": 15
         },
         "penalty": {
             "color": "#FA5F5A",
             "name": "Compliance risk",
             "sum": "9 128 791 $",
-            "percent": 10
+            "percent": 5
         },
         "header": "Risk chart",
         "dynamic": {

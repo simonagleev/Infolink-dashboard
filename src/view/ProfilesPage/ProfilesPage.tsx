@@ -82,13 +82,20 @@ const columns: IColumn<IPerson>[] = [
     field: 'KPI',
     headerName: 'KPI index',
     width: 'max(8vw, 125px)',
-    element: ({ KPI }) => (
-      <div style={{
-        display: 'flex',
-        justifyContent: 'flex-start',
-        alignItems: 'center',
-        cursor: 'pointer',
-      }}> 
+    element: ({ KPI, id }) => (
+      <div 
+        style={{
+          display: 'flex',
+          justifyContent: 'flex-start',
+          alignItems: 'center',
+          cursor: 'pointer',
+        }}
+        onClick={(e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          ioc.routerService.push(`/indicators/${id}`)
+        }}
+      > 
         <span style={{
         color: KPI < 50 ? '#FA5F5A' : KPI < 70 ? '#FE9B31' : '#7FB537',
         display: 'flex',
@@ -223,10 +230,7 @@ export const ProfilesPage = () => {
   }
 
   const handleClick = (person: IPerson) => {
-      ioc.routerService.push(`/profiles-list/${person.id}`);
-      event?.preventDefault();
-      event?.stopPropagation();
-      event?.stopImmediatePropagation();
+    ioc.routerService.push(`/profiles-list/${person.id}`);
   };
 
   const handleSelectedRows = (rows: RowId[]) => {
