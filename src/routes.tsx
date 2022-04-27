@@ -14,6 +14,7 @@ import DemoPage from './view/DemoPage';
 import ProfilesPage from './view/ProfilesPage';
 import OneProfilePage from './view/OneProfilePage';
 import IndicatorsPage from './view/IndicatorsPage';
+import SettingsPage from './view/SettingsPage';
 
 const systemRoutes: ISwitchItem[] = [
   {
@@ -59,7 +60,12 @@ export const routes: ISwitchItem[] = [
     path: '/indicators',
     element: IndicatorsPage,
   },
+  {
+    path: '/settings',
+    element: SettingsPage,
+  },  
   ...systemRoutes
 ];
 
 export default routes;
+
