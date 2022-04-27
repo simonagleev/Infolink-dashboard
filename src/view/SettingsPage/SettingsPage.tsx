@@ -30,7 +30,7 @@ const personalFields: TypedField[] = [
     },
 ];
 
-const norifyFields: TypedField[] = [
+const notifyFields: TypedField[] = [
     {
         type: FieldType.Line,
         title: 'Notifications',
@@ -195,6 +195,25 @@ const norifyFields: TypedField[] = [
     },
 ];
 
+const languageFields: TypedField[] = [
+    {
+        type: FieldType.Line,
+        title: 'Language',
+    },
+    {
+        type: FieldType.Radio,
+        title: 'English',
+    },
+    {
+        type: FieldType.Radio,
+        title: 'German',
+    },
+    {
+        type: FieldType.Radio,
+        title: 'Chinese',
+    },
+];
+
 const dangerFields: TypedField[] = [
     {
         type: FieldType.Line,
@@ -208,7 +227,8 @@ const dangerFields: TypedField[] = [
 
 const fields: TypedField[] = [
     ...personalFields,
-    ...norifyFields,
+    ...notifyFields,
+    ...languageFields,
     ...dangerFields,
 ];
 
