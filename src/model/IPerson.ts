@@ -7,7 +7,8 @@ interface ITimeValues {
 
 export interface IPerson {
     id: string;
-    name: string;
+    firstName: string;
+    lastName: string;
     occupation: string,
     age: number;
     gender: string;

@@ -98,9 +98,15 @@ const fields: TypedField[] = [
                 ],
               },
               {
-                name: 'name',
+                name: 'firstName',
                 type: FieldType.Text,
-                title: 'Full name',
+                title: 'First name',
+                description: 'Required',
+              },
+              {
+                name: 'lastName',
+                type: FieldType.Text,
+                title: 'Last name',
                 description: 'Required',
               },
               {

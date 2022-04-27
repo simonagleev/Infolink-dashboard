@@ -41,7 +41,7 @@ export const TimeLoss = () => {
                 />
                 {ioc.mockService.homePage.timeConsumption.map(i => (
                     <TimeLossItem 
-                    name={i.name} 
+                    name={i.firstName} 
                     avatar={i.avatar}
                     occupation={i.occupation}
                     work={i.timeValues.work}

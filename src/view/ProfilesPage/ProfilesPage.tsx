@@ -24,10 +24,6 @@ import { observer } from 'mobx-react';
 
 import ioc from '../../lib/ioc';
 
-const handleRowAction2 = () => {
-  ioc.routerService.push(`/indicators/}`)
-}
-
 const filters: TypedField[] = [
   {
     type: FieldType.Text,
@@ -38,6 +34,11 @@ const filters: TypedField[] = [
     type: FieldType.Text,
     name: 'lastName',
     title: 'Last name',
+  },
+  {
+    type: FieldType.Text,
+    name: 'occupation',
+    title: 'Occupation',
   }
 ];
 
@@ -64,10 +65,11 @@ const columns: IColumn<IPerson>[] = [
     ),
   },
   {
-    type: ColumnType.Text,
+    type: ColumnType.Compute,
     field: 'name',
-    headerName: 'Full name',
-    width: 'max(10vw, 80px)',
+    headerName: 'Name',
+    width: 'max(15vw, 100px)',
+    compute: ({ firstName, lastName }) => `${firstName} ${lastName}`,  
   },
   {
     type: ColumnType.Text,
@@ -81,7 +83,7 @@ const columns: IColumn<IPerson>[] = [
     headerName: 'KPI index',
     width: 'max(8vw, 125px)',
     element: ({ KPI }) => (
-      <div onClick={handleRowAction2} style={{
+      <div style={{
         display: 'flex',
         justifyContent: 'flex-start',
         alignItems: 'center',
@@ -175,17 +177,23 @@ export const ProfilesPage = () => {
 
   const handler = useStaticPaginator(ioc.mockService.homePage.timeConsumption, {
     filterHandler: (rows, filterData) => {
-      const { firstName, lastName } = filterData;
+      const { firstName, lastName, occupation } = filterData;
       if (firstName) {
         rows = rows.filter((row) => {
-          const rowFirstName = row.name.split(' ')[0];
+          const rowFirstName = row.firstName;
           return rowFirstName.toLowerCase().includes(firstName.toLowerCase());
         });
       }
       if (lastName) {
         rows = rows.filter((row) => {
-          const rowLastName = row.name.split(' ')[1];
+          const rowLastName = row.lastName;
           return rowLastName.toLowerCase().includes(lastName.toLowerCase());
+        });
+      }
+      if (occupation) {
+        rows = rows.filter((row) => {
+          const rowOccupation = row.occupation;
+          return rowOccupation.toLowerCase().includes(occupation.toLowerCase());
         });
       }
       return rows;
