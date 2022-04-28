@@ -4,6 +4,8 @@ import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import { makeStyles } from '@mui/styles';
+import { observer } from 'mobx-react';
+import IPerson from '../../../model/IPerson';
 
 const useStyles = makeStyles({
     root: {
@@ -20,12 +22,15 @@ const useStyles = makeStyles({
     },
 });
 
+
 interface IIndicatorCardProps {
     color: string;
-    value: string;
+    value: number | string;
     label: string;
     icon?: React.ComponentType;
 }
+
+
 
 export const IndicatorCard = ({
     color,
@@ -33,9 +38,16 @@ export const IndicatorCard = ({
     label,
     icon: Icon = () => <></>,
 }: IIndicatorCardProps) => {
+
     const classes = useStyles();
+
+    const test = () => {
+        console.log('someData')
+        console.log()
+    }
+
     return (
-        <Paper className={classes.root}>
+        <Paper onClick={test} className={classes.root}>
             <Stack
                 className={classes.container}
                 direction="column"
@@ -94,5 +106,5 @@ export const IndicatorCard = ({
     );
 };
 
-export default IndicatorCard;
+export default observer(IndicatorCard);
 

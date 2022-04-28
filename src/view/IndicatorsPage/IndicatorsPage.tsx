@@ -12,6 +12,8 @@ import IndicatorCard from './IndicatorCard/IndicatorCard';
 import MarkChatUnreadIcon from '@mui/icons-material/MarkChatUnread';
 import PointOfSaleIcon from '@mui/icons-material/PointOfSale';
 import WorkIcon from '@mui/icons-material/Work';
+import ioc from '../../lib/ioc';
+import { observer } from 'mobx-react';
 
 const fields: TypedField[] = [
   {
@@ -23,11 +25,13 @@ const fields: TypedField[] = [
     bottom: '10px',
     child: {
       type: FieldType.Component,
-      element: () => (
+      element: ({
+        indicatorValues
+      }) => (
         <IndicatorCard
           color="#4FC0E8"
           label='New chats'
-          value='58'
+          value={indicatorValues.newChats}
           icon={MarkChatUnreadIcon}
         />
       ),
@@ -42,12 +46,14 @@ const fields: TypedField[] = [
     bottom: '10px',
     child: {
       type: FieldType.Component,
-      element: () => (
+      element: ({
+        indicatorValues
+      }) => (
         <IndicatorCard
           color="#fc6e51"
           label='New sales'
-          value='11'
-          icon={PointOfSaleIcon }
+          value={indicatorValues.newSales}
+          icon={PointOfSaleIcon}
         />
       ),
     },
@@ -61,11 +67,13 @@ const fields: TypedField[] = [
     bottom: '10px',
     child: {
       type: FieldType.Component,
-      element: () => (
+      element: ({
+        indicatorValues
+      }) => (
         <IndicatorCard
           color="#7FB537"
           label='Hours worked'
-          value='32 of 40'
+          value={indicatorValues.hoursWorked}  
           icon={WorkIcon}
         />
       ),
@@ -80,11 +88,13 @@ const fields: TypedField[] = [
     bottom: '10px',
     child: {
       type: FieldType.Component,
-      element: () => (
+      element: ({
+        indicatorValues
+      }) => (
         <IndicatorCard
           color="#FE9B31"
           label='Late arrivals'
-          value='7'
+          value={indicatorValues.lateArrivals}  
           icon={AssignmentLateIcon}
         />
       ),
@@ -99,11 +109,13 @@ const fields: TypedField[] = [
     bottom: '10px',
     child: {
       type: FieldType.Component,
-      element: () => (
+      element: ({
+        indicatorValues
+      }) => (
         <IndicatorCard
           color="#ffce54"
           label='Absence hours'
-          value='8'
+          value={indicatorValues.abscenceHours}  
           icon={DirectionsRunIcon}
         />
       ),
@@ -118,11 +130,13 @@ const fields: TypedField[] = [
     bottom: '10px',
     child: {
       type: FieldType.Component,
-      element: () => (
+      element: ({
+        indicatorValues
+      }) => (
         <IndicatorCard
           color="#967adc"
           label='Overtime'
-          value='5'
+          value={indicatorValues.overtime} 
           icon={AccessTimeIcon}
         />
       ),
@@ -137,11 +151,13 @@ const fields: TypedField[] = [
     bottom: '10px',
     child: {
       type: FieldType.Component,
-      element: () => (
+      element: ({
+        indicatorValues
+      }) => (
         <IndicatorCard
           color="#da4453"
           label='Downtime'
-          value='10'
+          value={indicatorValues.downTime} 
           icon={HighlightOffIcon}
         />
       ),
@@ -149,10 +165,25 @@ const fields: TypedField[] = [
   },
 ];
 
-export const IndicatorsPage = () => (
-  <One
-    fields={fields}
-  />
-);
+interface IIndicatorsPageProps {
+  id: string;
+}
 
-export default IndicatorsPage;
+export const IndicatorsPage = ({
+  id,
+}: IIndicatorsPageProps) => {
+
+  const handler = () => ioc.mockService.one(id);
+
+  return (
+    <One
+      fields={fields}
+      handler={handler}
+    />
+  )
+};
+  
+  
+
+
+export default observer(IndicatorsPage);

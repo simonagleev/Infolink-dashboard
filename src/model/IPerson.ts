@@ -5,6 +5,16 @@ interface ITimeValues {
     downTime: number
 }
 
+interface IIndicatorValues {
+    newChats: number;
+    newSales: number;
+    hoursWorked: number;
+    lateArrivals: number;
+    abscenceHours: number;
+    overtime: number;
+    downTime: number;
+}
+
 export interface IPerson {
     id: string;
     firstName: string;
@@ -18,5 +28,6 @@ export interface IPerson {
     avatar: string;
     timeValues: ITimeValues;
     KPI: number;
+    indicatorValues: IIndicatorValues;
 }
 export default IPerson;

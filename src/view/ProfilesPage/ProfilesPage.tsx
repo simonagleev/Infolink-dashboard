@@ -118,6 +118,12 @@ const columns: IColumn<IPerson>[] = [
   },
   {
     type: ColumnType.Text,
+    field: 'age',
+    headerName: 'Age',
+    width: 'max(7vw, 35px)',
+  },
+  {
+    type: ColumnType.Text,
     field: 'phone',
     headerName: 'Phone number',
     width: '10vw',

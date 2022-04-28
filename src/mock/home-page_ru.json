@@ -226,7 +226,16 @@
             "phone": "+1 (928) 466-3062",
             "email": "annhardy@niquent.com",
             "country": "Italy",
-            "KPI": 113
+            "KPI": 113,
+            "indicatorValues": {
+                "newChats": 51,
+                "newSales": 31,
+                "hoursWorked": 50,
+                "lateArrivals": 0,
+                "abscenceHours": 0,
+                "overtime": 10,
+                "downTime": 0
+            }
         },
         {
             "firstName": "Tito",
@@ -245,7 +254,16 @@
             "phone": "+1 (884) 481-2205",
             "email": "alvaradohickman@niquent.com",
             "country": "Germany",
-            "KPI": 111
+            "KPI": 111,
+            "indicatorValues": {
+                "newChats": 77,
+                "newSales": 0,
+                "hoursWorked": 40,
+                "lateArrivals": 0,
+                "abscenceHours": 0,
+                "overtime": 10,
+                "downTime": 0
+            }
         },
         {
             "firstName": "Mirka",
@@ -264,7 +282,16 @@
             "phone": "+1 (841) 475-2771",
             "email": "carterhurley@niquent.com",
             "country": "Poland",
-            "KPI": 105
+            "KPI": 105,
+            "indicatorValues": {
+                "newChats": 51,
+                "newSales": 22,
+                "hoursWorked": 38,
+                "lateArrivals": 0,
+                "abscenceHours": 2,
+                "overtime": 12,
+                "downTime": 0
+            }
         },
         {
             "firstName": "Sara",
@@ -283,7 +310,16 @@
             "phone": "+1 (869) 528-2130",
             "email": "camillehutchinson@niquent.com",
             "country": "Netherlands",
-            "KPI": 90
+            "KPI": 90,
+            "indicatorValues": {
+                "newChats": 47,
+                "newSales": 19,
+                "hoursWorked": 38,
+                "lateArrivals": 3,
+                "abscenceHours": 1,
+                "overtime": 15,
+                "downTime": 1
+            }
         },
         {
             "firstName": "Andrew",
@@ -302,7 +338,16 @@
             "phone": "+1 (940) 527-3001",
             "email": "frankiedaugherty@niquent.com",
             "country": "Belgium",
-            "KPI": 69
+            "KPI": 69,
+            "indicatorValues": {
+                "newChats": 55,
+                "newSales": 10,
+                "hoursWorked": 35,
+                "lateArrivals": 3,
+                "abscenceHours": 2,
+                "overtime": 20,
+                "downTime": 3
+            }
         },
         {
             "firstName": "Jeremy",
@@ -321,12 +366,21 @@
             "phone": "+1 (949) 512-2789",
             "email": "jannawilkinson@niquent.com",
             "country": "Gambia",
-            "KPI": 38
+            "KPI": 38,
+            "indicatorValues": {
+                "newChats": 41,
+                "newSales": 1,
+                "hoursWorked": 12,
+                "lateArrivals": 13,
+                "abscenceHours": 8,
+                "overtime": 33,
+                "downTime": 20
+            }
         },
         {
             "firstName": "Ann",
             "lastName": "Juhnson",
-            "occupation": "Secretary",
+            "occupation": "Loan consultant",
             "avatar": "/assets/7.jpg",
             "timeValues": {
                 "work": 10,
@@ -340,7 +394,16 @@
             "phone": "+1 (876) 433-2631",
             "email": "lilianengland@niquent.com",
             "country": "Australia",
-            "KPI": 23
+            "KPI": 23,
+            "indicatorValues": {
+                "newChats": 21,
+                "newSales": 5,
+                "hoursWorked": 10,
+                "lateArrivals": 9,
+                "abscenceHours": 17,
+                "overtime": 30,
+                "downTime": 13
+            }
         }
     ],
     "dynamicChartItems": [
