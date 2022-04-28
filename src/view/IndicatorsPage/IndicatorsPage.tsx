@@ -183,8 +183,10 @@ export const IndicatorsPage = ({
     <>
       <Breadcrumbs
         title="Profiles"
+        disabled
         subtitle={id}
         onBack={handleBack}
+
       />
       <One
         fields={fields}

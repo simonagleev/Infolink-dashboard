@@ -115,6 +115,7 @@ const columns: IColumn<IPerson>[] = [
     field: 'gender',
     headerName: 'Gender',
     width: 'max(8vw, 65px)',
+    
   },
   {
     type: ColumnType.Text,

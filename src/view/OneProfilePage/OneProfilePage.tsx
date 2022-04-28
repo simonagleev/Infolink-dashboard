@@ -110,6 +110,11 @@ const fields: TypedField[] = [
                 description: 'Required',
               },
               {
+                name: 'age',
+                type: FieldType.Text,
+                title: 'Age',
+              },
+              {
                 name: 'occupation',
                 type: FieldType.Text,
                 title: 'Occupation',
