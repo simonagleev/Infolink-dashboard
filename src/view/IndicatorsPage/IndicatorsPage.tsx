@@ -1,4 +1,5 @@
 import {
+  Breadcrumbs,
   FieldType,
   One,
   TypedField,
@@ -73,7 +74,7 @@ const fields: TypedField[] = [
         <IndicatorCard
           color="#7FB537"
           label='Hours worked'
-          value={indicatorValues.hoursWorked}  
+          value={indicatorValues.hoursWorked}
           icon={WorkIcon}
         />
       ),
@@ -94,7 +95,7 @@ const fields: TypedField[] = [
         <IndicatorCard
           color="#FE9B31"
           label='Late arrivals'
-          value={indicatorValues.lateArrivals}  
+          value={indicatorValues.lateArrivals}
           icon={AssignmentLateIcon}
         />
       ),
@@ -115,7 +116,7 @@ const fields: TypedField[] = [
         <IndicatorCard
           color="#ffce54"
           label='Absence hours'
-          value={indicatorValues.abscenceHours}  
+          value={indicatorValues.abscenceHours}
           icon={DirectionsRunIcon}
         />
       ),
@@ -136,7 +137,7 @@ const fields: TypedField[] = [
         <IndicatorCard
           color="#967adc"
           label='Overtime'
-          value={indicatorValues.overtime} 
+          value={indicatorValues.overtime}
           icon={AccessTimeIcon}
         />
       ),
@@ -157,7 +158,7 @@ const fields: TypedField[] = [
         <IndicatorCard
           color="#da4453"
           label='Downtime'
-          value={indicatorValues.downTime} 
+          value={indicatorValues.downTime}
           icon={HighlightOffIcon}
         />
       ),
@@ -175,15 +176,26 @@ export const IndicatorsPage = ({
 
   const handler = () => ioc.mockService.one(id);
 
+  const handleBack = () => {
+    ioc.routerService.push(`/profiles-list`);
+  };
   return (
-    <One
-      fields={fields}
-      handler={handler}
-    />
+    <>
+      <Breadcrumbs
+        title="Profiles"
+        subtitle={id}
+        onBack={handleBack}
+      />
+      <One
+        fields={fields}
+        handler={handler}
+      />
+    </>
+
   )
 };
-  
-  
+
+
 
 
 export default observer(IndicatorsPage);
