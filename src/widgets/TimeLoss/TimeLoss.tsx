@@ -39,15 +39,16 @@ export const TimeLoss = () => {
                         paddingBottom: '37px',
                     }}
                 />
-                {ioc.mockService.homePage.timeConsumption.map(i => (
-                    <TimeLossItem 
-                    name={i.firstName} 
-                    avatar={i.avatar}
-                    occupation={i.occupation}
-                    work={i.timeValues.work}
-                    overTime={i.timeValues.overTime}
-                    sickLeave={i.timeValues.overTime}
-                    downTime={i.timeValues.overTime}
+                {ioc.mockService.homePage.timeConsumption.map((i, idx) => (
+                    <TimeLossItem
+                        key={idx}
+                        name={i.firstName} 
+                        avatar={i.avatar}
+                        occupation={i.occupation}
+                        work={i.timeValues.work}
+                        overTime={i.timeValues.overTime}
+                        sickLeave={i.timeValues.overTime}
+                        downTime={i.timeValues.overTime}
                     />
                 ))}
             </Box>

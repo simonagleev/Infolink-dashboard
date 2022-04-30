@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useMemo } from 'react';
-import { IMenuGroup, IMenuOption } from 'react-declarative';
+import { IMenuGroup, IMenuOption, ScrollView } from 'react-declarative';
 
 import { observer } from "mobx-react";
 import { makeStyles } from '@mui/styles';
@@ -66,7 +66,20 @@ const cleanupMenu = (entry: Partial<IMenuGroup>, allowed: Set<IMenuOption>) =>
         }
     });
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
+    root: {
+        display: 'flex',
+        alignItems: 'stretch',
+        justifyContent: 'stretch',
+        flexDirection: 'column',
+        minHeight: '100vh',
+        maxHeight: '100vh',
+        minWidth: '100vw',
+        maxWidth: '100vw',
+    },
+    container: {
+        flex: 1,
+    },
     drawer: {
         width: DRAWER_WIDTH,
         '& > .MuiPaper-root': {
@@ -81,7 +94,7 @@ const useStyles = makeStyles((theme) => ({
             flex: 1,
         },
     },
-}));
+});
 
 export const Scaffold = ({
     children,
@@ -110,7 +123,7 @@ export const Scaffold = ({
 
     const handleClose = () => {
         setOpened(false);
-      };
+    };
 
     const handleClick = (name: string) => {
         handleClose();
@@ -120,7 +133,7 @@ export const Scaffold = ({
     const handleMenuToggle = () => setOpened(!opened);
 
     return (
-        <Box sx={{ display: 'flex', flexDirection: 'column' }}>
+        <Box className={classes.root}>
             <CssBaseline />
             <Drawer
                 className={classes.drawer}
@@ -154,11 +167,13 @@ export const Scaffold = ({
             {ioc.layoutService.hasHeader && (
                 <Header onMenuToggle={handleMenuToggle} />
             )}
-            <Box p={1}>
-                <Grid component="main" container>
-                    {children}
-                </Grid>
-            </Box>
+            <ScrollView className={classes.container}>
+                <Box p={1}>
+                    <Grid component="main" container>
+                        {children}
+                    </Grid>
+                </Box>
+            </ScrollView>
             {ioc.layoutService.hasFooter && (
                 <Footer />
             )}
