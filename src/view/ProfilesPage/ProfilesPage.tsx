@@ -68,7 +68,7 @@ const columns: IColumn<IPerson>[] = [
     type: ColumnType.Compute,
     field: 'name',
     headerName: 'Name',
-    width: 'max(15vw, 100px)',
+    width: 'max(10vw, 135px)',
     compute: ({ firstName, lastName }) => `${firstName} ${lastName}`,  
   },
   {
@@ -81,7 +81,7 @@ const columns: IColumn<IPerson>[] = [
     type: ColumnType.Component,
     field: 'KPI',
     headerName: 'KPI index',
-    width: 'max(8vw, 125px)',
+    width: 'max(15vw, 200px)',
     element: ({ KPI, id }) => (
       <div 
         style={{
@@ -121,25 +121,25 @@ const columns: IColumn<IPerson>[] = [
     type: ColumnType.Text,
     field: 'age',
     headerName: 'Age',
-    width: 'max(7vw, 35px)',
+    width: '50px',
   },
   {
     type: ColumnType.Text,
     field: 'phone',
     headerName: 'Phone number',
-    width: '10vw',
+    width: 'max(10vw, 150px)',
   },
   {
     type: ColumnType.Text,
     field: 'email',
     headerName: 'Email',
-    width: '15vw',
+    width: 'max(15vw, 215px)',
   },
   {
     type: ColumnType.Component,
     field: 'countryFlag',
     headerName: 'Country',
-    width: '12vw',
+    width: 'max(12vw, 150px)',
     element: CountryFlag,
   },
   {
@@ -177,7 +177,7 @@ const rowActions = [
   },
 ];
 
-const heightRequest = () => window.innerHeight - 100;
+const heightRequest = () => window.innerHeight - 70;
 const widthRequest = () => window.innerWidth - 20;
 
 interface IFilterData {
