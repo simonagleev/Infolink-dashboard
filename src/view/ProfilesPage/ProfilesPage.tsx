@@ -9,6 +9,7 @@ import {
   SelectionMode,
   ListHandlerSortModel,
   useStaticPaginator,
+  IListChip,
 } from 'react-declarative';
 
 import { Avatar, Box } from '@mui/material';
@@ -66,6 +67,7 @@ const columns: IColumn<IPerson>[] = [
   },
   {
     type: ColumnType.Compute,
+    primary: true,
     field: 'name',
     headerName: 'Name',
     width: 'max(10vw, 135px)',
@@ -79,6 +81,7 @@ const columns: IColumn<IPerson>[] = [
   },
   {
     type: ColumnType.Component,
+    secondary: true,
     field: 'KPI',
     headerName: 'KPI index',
     width: 'max(15vw, 200px)',
@@ -104,7 +107,7 @@ const columns: IColumn<IPerson>[] = [
         <span style={{ fontWeight: '900', marginRight: '1em' }}>
           {`${KPI}%`}
         </span>
-          ({KPI < 50 ? 'Review needed' : KPI < 70 ? 'Warning' : 'Normal'})
+          ({KPI < 50 ? 'Review needed' : KPI < 70 ? 'Warning' : 'High'})
         </span>
       </div>
       
@@ -154,23 +157,35 @@ const actions: IListAction[] = [
   {
     type: ActionType.Menu,
     options: [
+      /*{
+        action: 'mobile-view',
+      },*/
       {
-        action: 'create',
-        label: 'Create a new person',
-      },
-      {
-        action: 'delete',
-        label: 'Delete selected',
+        action: 'auto-reload',
       },
     ]
   },
 ];
 
-const rowActions = [
+const chips: IListChip[] = [
   {
-    label: 'Remove this person',
-    action: 'remove-action',
+    label: 'High KPI',
+    name: 'high_kpi',
+    color: '#4caf50',
   },
+  {
+    label: 'Warning KPI',
+    name: 'warning_kpi',
+    color: '#ff9800',
+  },
+  {
+    label: 'Review KPI',
+    name: 'review_kpi',
+    color: '#f50057',
+  }
+];
+
+const rowActions = [
   {
     label: 'Show perfomace indicators',
     action: 'indicators-action',
@@ -211,15 +226,23 @@ export const ProfilesPage = () => {
         });
       }
       return rows;
-    }
+    },
+    chipsHandler: (rows, chips: any) => {
+      const { high_kpi, warning_kpi, review_kpi } = chips;
+      if (high_kpi) {
+        rows = rows.filter(({ KPI }) => KPI >= 70);
+      }
+      if (warning_kpi) {
+        rows = rows.filter(({ KPI }) => KPI < 70 && KPI >= 50);
+      }
+      if (review_kpi) {
+        rows = rows.filter(({ KPI }) => KPI < 50);
+      }
+      return rows;
+    },
   });
 
   const [selectedRows, setSelectedRows] = useState<RowId[]>([]);
-
-  const handleRemove = async (person: IPerson) => {
-    await ioc.mockService.remove(person);        
-    apiRef.current?.reload();
-  };
 
   const handleRowAction = (person: IPerson) => {
     ioc.routerService.push(`/indicators/${person.id}`)
@@ -263,6 +286,7 @@ export const ProfilesPage = () => {
       onRowClick={handleClick}
       onAction={handleAction}
       sortModel={sortModel}
+      chips={chips}
     />
   );
 };
