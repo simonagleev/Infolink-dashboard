@@ -171,17 +171,17 @@ const chips: IListChip[] = [
   {
     label: 'High KPI',
     name: 'high_kpi',
-    color: '#4caf50',
+    color: '#7FB537',
   },
   {
     label: 'Warning KPI',
     name: 'warning_kpi',
-    color: '#ff9800',
+    color: '#FE9B31',
   },
   {
     label: 'Review KPI',
     name: 'review_kpi',
-    color: '#f50057',
+    color: '#FA5F5A',
   }
 ];
 
@@ -228,17 +228,21 @@ export const ProfilesPage = () => {
       return rows;
     },
     chipsHandler: (rows, chips: any) => {
+      if (!Object.values(chips).reduce((acm, cur) => acm || cur)) {
+        return rows;
+      }
       const { high_kpi, warning_kpi, review_kpi } = chips;
+      const tmp: IPerson[][] = [];
       if (high_kpi) {
-        rows = rows.filter(({ KPI }) => KPI >= 70);
+        tmp.push(rows.filter(({ KPI }) => KPI >= 70));
       }
       if (warning_kpi) {
-        rows = rows.filter(({ KPI }) => KPI < 70 && KPI >= 50);
+        tmp.push(rows.filter(({ KPI }) => KPI < 70 && KPI >= 50));
       }
       if (review_kpi) {
-        rows = rows.filter(({ KPI }) => KPI < 50);
+        tmp.push(rows.filter(({ KPI }) => KPI < 50));
       }
-      return rows;
+      return tmp.flat();
     },
   });
 
